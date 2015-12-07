@@ -7,6 +7,8 @@
         	<meta http-equiv = "Content-Type" content = "text/html; charset = utf-8" />
         	<meta name = "keywords" content = "Web Development, CGI Design , Iphone App Development"/>
         	<link href = "login.css" rel = "stylesheet" type = "text/css">
+            <link rel="stylesheet" href="footer-basic-centered.css">
+
              <link rel="icon" href="image/favicon.ico">
             <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css' />
 
@@ -38,38 +40,39 @@
 
             <div class = "container">
 
-                <div class = "login">
-                    <div class = "heading">
-                        <h2>Sign In </h2>
-                        <form action = "#">
-                            <div class = "input-group input-group-lg">
-                                <span class = "input-group-addon"><i class = "fa fa-user"></li></span>
-                                <input type = "text" class = "form-control" placeholder = "Enter your Email">
-                            </div>
+             <div id="login">
 
-                            <div class = "input-group input-group-lg">
-                                <span class = "input-group-addon"><i class = "fa fa-lock"></i></span>
-                                <input type = "password" class = "form-control" placeholder = "password">
-                            </div>
+        <h2><span class="fontawesome-lock"></span>Sign In</h2>
+
+        <form action="#" method="POST">
+
+          <fieldset>
+
+            <p><label for="email">E-mail address</label></p>
+            <p><input type="email" id="email" placeholder="mail@address.com"></p>
+
+            <p><label for="password">Password</label></p>
+            <p><input type="password" id="password" placeholder="password"></p>
+
+            <p><input type="submit" value="Sign In"></p>
+
+          </fieldset>
+
+        </form>
+
+         <div class = "login-help">
+            <p>Forgot Password ? <a href = "#">Click here to reset it </a>.</p>
+         </div>
+
+      </div> <!-- end login -->
 
 
-                            <button type = "submit" class = "float">Login </button>
-
-                        </form>
-
-                    </div>
-                </div>
-
-
-                <div class = "login-help">
-                    <p>Forgot Password ? <a href = "#">Click here to reset it </a>.</p>
-                </div>
-            </div>
-
-           <!-- <footer class = "footer">
-                 <p>Copyright © 2015 <a href = "http://at-crafts.com/main/index.php">CRAFTS Inc </a> . All Rights Reserved</p>
-
-            </footer>-->
+               
+            </div> <!-- container close here -->
+           <footer class="footer">
+           <a href="http://www.at-crafts.com/main/index.php" target="_blank"><img src="image/crafts.jpg" alt="CRAFTS Inc." /></a>
+           <p>&copy 2015 CRAFTS Inc. All Rights Reserved.</p>
+           </footer>
 
         </div><!-- wrapper close -->
 
