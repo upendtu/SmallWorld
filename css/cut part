@@ -1,25 +1,140 @@
-         body {
+       
+
+
+
+       <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+        <html>
+        <head>
+
+        	<title>Small World</title>
+        	<meta name = "viewport" content = "width=device-width , initial-scale = 1" />
+        	<meta http-equiv = "Content-Type" content = "text/html; charset = utf-8" />
+        	<meta name = "keywords" content = "Web Development, CGI Design , Iphone App Development"/>
+        	<link href = "style.css" rel = "stylesheet" type = "text/css">
+            <link rel="icon" href="image/favicon.ico">
+            <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css' />
+
+        </head>
+
+        <body>
+
+
+             <div class = wrapper>
+        	<!-- Header Starts Here -->
+
+        	<div class= "header">
+
+        		<!-- Header Logo -->
+        		<div class = "logo">
+        			<a href = "index.html" > <img src = "image/logo.png"></a>
+        		</div> <!--header logo close -->
+
+        		<!-- Header Menu starts Here -->
+        		<div class = "header-menu">
+        			<ul class = "navigation">
+        				<li><a href = "#">Employer Section </a></li>
+        				<li><a href = "#">Candidate Login </a></li>
+        			</ul>
+        		</div><!-- header Menu close -->
+
+        	</div><!-- Header Close -->
+
+
+            <!--- Main section Start here -->
+        	<div class = "main">
+
+               <!-- <div class="main-left">
+                    <div class="mobile-app">
+                        <img src = "image/app-bg2.png">
+                    
+
+                    
+
+                    <div class = "appslide">
+
+                            <figure>
+                            <img src="image/app-slide01.jpg" alt="">
+                            <img src="image/app-slide02.jpg" alt="">
+                            <img src="image/app-slide01.jpg" alt="">
+                            <img src="image/app-slide02.jpg" alt="">
+                            <img src="image/app-slide01.jpg" alt="">
+                            </figure>
+
+                    
+
+                    </div>
+
+                    </div>
+
+                    <div class = "app-btn">
+                        <img src = "image/btn-1.png">
+                    </div>
+
+                </div>--><!-- main left close -->
+
+                <div class="main-right">
+
+                    <!-- main right contents start here -->
+
+                   <!-- <div class= "contents">
+
+                     <h3>Dreams are extremely important.
+                        You can’t do it unless you imagine it.</h3>
+                     <p>Manage your job search with the Small World FREE jobs app and web.You can  Find, apply and manage jobs directly from your phone. With Small World, you have access to the most recent job posts at your fingertips.Using small world you can find job world wide.You can select your preferable language ,country and work type using SMW </P>
+                     <div class="bnr-btn">
+                           <a href="../registration/index.php" class="hvr-bounce-to-bottom"><img src="image/Rb.png"></a>
+                     </div>
+
+                    </div>--><!-- main right contents close here -->
+
+                </div> <!-- main right close here -->
+                
+        	</div><!-- Main section close here -->
+
+
+            <!--<footer class = "footer">
+                 <p>Copyright © 2015 <a href = "http://at-crafts.com/main/index.php">CRAFTS Inc </a> . All Rights Reserved</p>
+
+            </footer>-->
+        </div>
+
+        <div class="footer">Page: <span class="pagenum"></span></div>
+
+
+        </body>
+
+
+        </html>
+
+
+
+
+        <!---   CSS code -->
+
+
+        /* body {
 
             background-color: #66cbff;
-            background-image: url('image/icon.png');
+            background-image: url('../image/icon.png');
             background-repeat: no-repeat;
             background-position: right;
             background-position-x:110% ;
             background-position-y:-200px;
-            width: 100%;
-
-        
+            margin:0;
+            padding:0;
+            height:100%;
+            
           }
 
+          #container {
+            min-height:100%;
+            position:relative;
+           }
 
-       .wrapper{
-        width: 100%;
-        height: 100%;
-        }
-
-       .header{
-        width: 100%;
-        height: 75px;
+       #header{
+         width: 100%;
+         height: 75px;
+          padding:10px;
         }
 
        .logo{
@@ -66,17 +181,16 @@
 
        }
 
-        .main{
+        #main{
             
-            height: 800px;
-            margin-top: 80px;
-            width: 100%;
+            padding:10px;
+            padding-bottom:60px;   /* Height of the footer */
             
             
            
-            }
+         /*   }
 
-          .main-left{
+   .main-left{
             
             height: 600px;
             width: 40%;
@@ -219,7 +333,6 @@
              .app-btn{
               height: 50px;
               width: 200px;
-              margin-top: 540px;
               float: right;
               margin-left: 250px;
             
@@ -232,37 +345,36 @@
 
 
                   
-             }
+             } */
 
-             .footer {
-                
-                 width: 100%;
-                 margin-top: 170px;
-                 height: 70px;
-                 background-color: #efefef;
-                 text-align: center;
+           /*  #footer {
+              position:absolute;
+              bottom:0;
+              width:100%;
+              left: 0;
+              right: 0;
+              height: 60px;
+              background:#FFF;
+                    text-align: center;
+              }
+  
+
+             #footer p{
+
+               text-align: center;
+               font-size: .7em;
+               text-decoration: none;
+               clear: both;
+               font-family: arial;
+               margin-top:-5px;
+               
+              
                  
-
-             }
-
-             .footer p{
-
-                  text-align: center;
-                  font-size: 1.1em;
-                  text-decoration: none;
-                  clear: both;
-                  font-family: arial;
-                  padding-top: 30px;
                   
              }
-
-             .footer a{
-
-                  text-decoration: none;
-                  color: #000;
-                  clear: both;
-                  font-family: arial,helvetica;
-                  
+             
+             #footer img{
+               height:35px;
              }
 
 

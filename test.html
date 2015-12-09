@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <style>
+     html,
+body {
+   margin:0;
+   padding:0;
+   height:100%;
+}
+#container {
+   min-height:100%;
+   position:relative;
+}
+#header {
+   background:#ff0;
+   padding:10px;
+   height: 50px;
+}
+#body {
+   padding:10px;
+   padding-bottom:60px;   /* Height of the footer */
+}
+#footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:60px;   /* Height of the footer */
+   background:#6cf;
+}
+    </style>
+  </head>
+  <body>
+    <div id="container">
+   <div id="header"></div>
+   <div id="body">The html and body tags
+The html and body tags must be set to height:100%; this allows us to set a percentage height on our container div later. I have also removed the margins and padding on the body tag so there are no spaces around the parameter of the page.
+The container div
+The container div has a min-height:100%; this will ensure it stays the full height of the screen even if there is hardly any content. Many older browsers don't support the min-height property, there are ways around it with JavaScript and other methods but that is out of scope for this article. The container div is also set to position:relative; this allows us to absolutely position elements inside it later.
+The header div
+There is nothing unusual with the header. Make it whatever colour and size you like.
+The body div
+The body is quite normal too. The only important thing is it must have a bottom padding that is equal to (or slightly larger than) the height of the footer. You can also use a bottom border if you prefer but a margin won't work.
+The footer div
+The footer has a set height in pixels (or ems). The div is absolutely positioned bottom:0; this moves it to the bottom of the container div. When there is little content on the page the container div is exactly the height of the browser viewport (because of the min-height:100%;) and the footer sits neatly at the bottom of the screen. When there is more than a page of content the container div becomes larger and extends down below the bottom of the viewport - the footer is still positioned at the bottom of the container div but this time you need to scroll down to the end of the page to see it. The footer is also set to width:100%; so it stretches across the whole page.
+The IE 6 & IE 5.5 CSS
+Older versions of Internet Explorer don't understand the min-height property but lucky for us the normal height property behaves exactly the same way in these old Microsoft browsers, that is, it will stretch to 100% height of the viewport but if the content is longer it will stretch even further. We simply expose this 100% height rule to Internet Explorer only by using IE conditional comments. View the source on the demo to see how this is done.
+
+So there you have it... A simple, valid way to make the footer get down! I hope you find it useful.
+
+Follow me on Twitter @mattjamestaylor
+Tagged:
+CSS tricksCascading style sheets (CSS)Progressive enhancementSemantic XHTMLTutorialsWeb designWebsite layouts
+Enjoy this article?
+If you find my website useful, feel free to donate any amount you wish. It will help pay for my hosting! =)</div>
+   <div id="footer"></div>
+</div>
+  </body>
+</html>
