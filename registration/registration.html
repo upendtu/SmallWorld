@@ -1,13 +1,22 @@
 <!Doctype html>
 <html lang="en">
  <head>
-   <title>Member Login</title>
+   <title>Member Registration</title>
    <meta name = "viewport" content = "width=device-width , initial-scale = 1" />
    <meta http-equiv = "Content-Type" content = "text/html; charset = utf-8" />
    <meta name = "keywords" content = "Web Development, CGI Design , Iphone App Development"/>
    <link href = "../lib/css/style.css" rel = "stylesheet" type = "text/css">
    <link rel="icon" href="../lib/images/favicon.ico">
    <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css' />
+   <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+   <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+   <script src="js/jquery.min.js"></script>
+   <script>
+  $(function() {
+    $( "#datepicker" ).datepicker();
+  });
+  </script>
+
  </head>
  <body>
    <div class="wrapper">
@@ -21,17 +30,22 @@
     </header><!-- header close here -->
     <div class="main">
       <form class="form" action="#">
-        <h2>Member Login </h2>
+        <h2>Create Login Details </h2>
         <input type="text" value="" name="email" placeholder="Email" class="input">
         <input type="password" value="" name="pass" placeholder="Password" class="input">
-
-        <div class="checkbox">
-          <input type="checkbox" name="next_login">
+        <input type="password" value="" name="re-pass" placeholder="Re-Enter Password" class="input">
+        <div class="personal-details">
+          <h2>Create Personal Details</h2>
+          <input type="text" value="" name="name" placeholder="Enter Name" class="input">
+          <input type="text" value="" name="country" placeholder="Enter Your Country" class="input">
+          <input type="text" value="" name="language" placeholder="Language you can speak" class="input">
+          <input type="text" value="" name="job_category" placeholder="Functional Area" class="input">
+          <input type="text" value="" name="mobile" placeholder="Enter Your Mobile No." class="input">
+          <input type="text" value="" name="dob"  placeholder="Select your Birthday" class="input" id="datepicker">
         </div>
-        <span class="remember-me">Remember Me</span>
 
         <input type="submit" value="submit" class="submit-button">
-      </form>
+      </form><!-- form close -->
     </div><!-- Main close here -->
 
     <footer class="footer">
