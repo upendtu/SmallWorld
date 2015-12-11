@@ -1,4 +1,37 @@
 
+/* =======================main page header start here ==========*/
+.main-header{
+  min-width: 960px;
+  height: 80px;
+  color: #fff;
+
+  img{
+    float: left;
+    height: 50px;
+    margin: 15px;
+  }
+
+  ul{
+    float: right;
+  }
+
+  li{
+    float: left;
+    font-size: .8em;
+    margin: 28px 20px 0 20px;
+  }
+
+  a{
+    color: #fff;
+    text-decoration: none;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+}
+
+/*==============================other page Header start here ===============*/
+
 .header{
   background:  #66cbff;
   min-width: 960px;
@@ -29,5 +62,9 @@
     }
   }
 }
+
+
+
+
 
 /*=================Header close ================*/

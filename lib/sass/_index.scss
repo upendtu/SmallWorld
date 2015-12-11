@@ -1,0 +1,90 @@
+.main-page{
+  background: url('../images/icon.png');
+  background-repeat:no-repeat;
+  background-position-x:110%;
+  background-position-y:-140px;
+  background-color:#66cbff;
+}
+
+.main-left{
+  float: left;
+  width: 300px;
+  padding: 10px 0;
+  text-align: center;
+  position: relative;
+}
+.mobile-app{
+  height: 495px;
+}
+
+.appslide{
+  width: 208px;
+  border: 2px #000 solid;
+  position: absolute;
+  top: 70px;
+  left: 46px;
+  overflow: hidden;
+
+  figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slidy infinite;
+  }
+
+  img {
+    width: 203px;
+  }
+}
+
+@keyframes slidy {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: -400%; }
+  }
+
+  .app-btn{
+    margin-left:15px;
+    margin-top: 25px;
+  }
+
+  .main-right{
+    float: right;
+  width: 600px;
+  padding: 10px;
+  color: #fff;
+
+  h1 {
+    margin-top: 58px;
+    font-size: 1.5rem;
+  }
+
+  p {
+    margin: 40px 0 60px;
+    font-size: 1rem;
+  }
+
+  a {
+    background-color: #4E5FFF;
+    width: 210px;
+    padding: 18px 10px;
+    display: block;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+
+    &:hover {
+      background-color: #2338FC;
+    }
+  }
+  }
