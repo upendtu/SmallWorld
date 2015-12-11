@@ -1,0 +1,49 @@
+.login-form {
+  border: 2px solid #ccc;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
+  padding: 30px;
+
+  h2 {
+    font-size: 1.2em;
+    color: #66cbff;
+    margin-bottom: 30px;
+
+  }
+}
+
+.input {
+  width: 100%;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+}
+
+.checkbox {
+  margin-bottom: 50px;
+  margin-top: 10px;
+  float:left;
+
+}
+.remember-me {
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-family: sans-serif;
+}
+
+.submit-button {
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 0;
+  background-color: #{$subColor};
+  text-align: center;
+  color: #fff;
+
+  &:hover {
+    transition: 0.2s;
+    background-color: #{$subAccentColor}
+  }
+}
+
+
+/*==============Form close here ========*/

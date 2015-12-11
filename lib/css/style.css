@@ -1,0 +1,274 @@
+pre, textarea {
+  overflow: auto;
+}
+
+[hidden], audio:not([controls]), template {
+  display: none;
+}
+
+details, main, summary {
+  display: block;
+}
+
+input[type=number] {
+  width: auto;
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+}
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+progress {
+  display: inline-block;
+}
+
+small {
+  font-size: 75%;
+}
+
+textarea {
+  resize: vertical;
+}
+
+[unselectable] {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+*, ::after, ::before {
+  box-sizing: inherit;
+  border-style: solid;
+  border-width: 0;
+}
+
+* {
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+::after, ::before {
+  text-decoration: inherit;
+  vertical-align: inherit;
+}
+
+:root {
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  box-sizing: border-box;
+  cursor: default;
+  font: 16px/1.5 sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  text-decoration: none;
+}
+
+audio, canvas, iframe, img, svg, video {
+  vertical-align: middle;
+}
+
+button, input, select, textarea {
+  background-color: transparent;
+  color: inherit;
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  min-height: 1.5em;
+}
+
+code, kbd, pre, samp {
+  font-family: monospace,monospace;
+}
+
+nav ol, nav ul {
+  list-style: none;
+}
+
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+select::-ms-value {
+  color: currentColor;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+::-moz-selection {
+  background-color: #B3D4FC;
+  text-shadow: none;
+}
+
+::selection {
+  background-color: #B3D4FC;
+  text-shadow: none;
+}
+
+@media screen {
+  [hidden~=screen] {
+    display: inherit;
+  }
+
+  [hidden~=screen]:not(:active):not(:focus):not(:target) {
+    clip: rect(0 0 0 0) !important;
+    position: absolute !important;
+  }
+}
+.header {
+  background: #66cbff;
+  min-width: 960px;
+  height: 80px;
+  color: #fff;
+}
+.header img {
+  float: left;
+  height: 50px;
+  margin: 15px;
+}
+.header ul {
+  float: right;
+}
+.header li {
+  float: left;
+  font-size: .8em;
+  margin: 28px 20px 0 20px;
+}
+.header a {
+  color: #fff;
+  text-decoration: none;
+}
+.header a:hover {
+  text-decoration: none;
+}
+
+/*=================Header close ================*/
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  font-size: 1.2rem;
+  height: 100%;
+  letter-spacing: 1px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  transition: 0.2s;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  height: 100%;
+  min-height: 100%;
+  height: auto !important;
+}
+
+/*==================Common Css close here ===============*/
+footer {
+  width: 100%;
+  min-width: 960px;
+  position: absolute;
+  bottom: 0px;
+  text-align: center;
+  background-color: #inherit;
+}
+footer img {
+  height: 40px;
+}
+footer p {
+  font-size: 0.7rem;
+  margin-bottom: 10px;
+}
+
+.login-form {
+  border: 2px solid #ccc;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
+  padding: 30px;
+}
+.login-form h2 {
+  font-size: 1.2em;
+  color: #66cbff;
+  margin-bottom: 30px;
+}
+
+.input {
+  width: 100%;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+}
+
+.checkbox {
+  margin-bottom: 50px;
+  margin-top: 10px;
+  float: left;
+}
+
+.remember-me {
+  float: left;
+  margin-left: 20px;
+  margin-top: 10px;
+  font-family: sans-serif;
+}
+
+.submit-button {
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 0;
+  background-color: #4E5FFF;
+  text-align: center;
+  color: #fff;
+}
+.submit-button:hover {
+  transition: 0.2s;
+  background-color: #2338FC;
+}
+
+/*==============Form close here ========*/
+.main {
+  width: 960px;
+  margin: 50px auto 0;
+  padding: 0 30px 100px 30px;
+}
+
+/*# sourceMappingURL=style.css.map */

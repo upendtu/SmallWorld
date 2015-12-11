@@ -1,80 +1,43 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
-        <html>
-        <head>
+<!Doctype html>
+<html lang="en">
+ <head>
+   <title>Member Login</title>
+   <meta name = "viewport" content = "width=device-width , initial-scale = 1" />
+   <meta http-equiv = "Content-Type" content = "text/html; charset = utf-8" />
+   <meta name = "keywords" content = "Web Development, CGI Design , Iphone App Development"/>
+   <link href = "../lib/css/style.css" rel = "stylesheet" type = "text/css">
+   <link rel="icon" href="../lib/images/favicon.ico">
+   <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css' />
+ </head>
+ <body>
+   <div class="wrapper">
+     <header class="header">
+       <a href="../index.html"><img src="../lib/images/logo.png" alt="Small World" /></a>
+       <div class="header_menu">
+        <ul>
+          <li><a href="registration.html">Candidate Registration</a></li>
+        </ul>
+      </div><!-- header_menu close here -->
+    </header><!-- header close here -->
+    <div class="main">
+      <form class="login-form" action="#">
+        <h2>Member Login </h2>
+        <input type="text" value="" name="email" placeholder="Email" class="input">
+        <input type="password" value="" name="pass" placeholder="Password" class="input">
 
-        	<title>Small World</title>
-        	<meta name = "viewport" content = "width=device-width , initial-scale = 1" />
-        	<meta http-equiv = "Content-Type" content = "text/html; charset = utf-8" />
-        	<meta name = "keywords" content = "Web Development, CGI Design , Iphone App Development"/>
-        	<link href = "../css/login.css" rel = "stylesheet" type = "text/css">
-            <link rel="stylesheet" href="footer-basic-centered.css">
+        <div class="checkbox">
+          <input type="checkbox" name="next_login">
+        </div>
+        <span class="remember-me">Remember Me</span>
 
-             <link rel="icon" href="image/favicon.ico">
-            <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css' />
+        <input type="submit" value="submit" class="submit-button">
+      </form>
+    </div><!-- Main close here -->
 
-        </head>
-
-        <body>
-
-             <div class = "wrapper">
-
-            <!-- Header Starts Here -->
-
-            <div class= "header">
-
-                <!-- Header Logo -->
-                <div class = "logo">
-                    <a href = "index.html" > <img src = "../image/logo.png"></a>
-                </div> <!--header logo close -->
-
-                <!-- Header Menu starts Here -->
-                <div class = "header-menu">
-                    <ul class = "navigation">
-                        <li><a href = "#">Candidate Registration </a></li>
-                    </ul>
-                </div><!-- header Menu close -->
-
-            </div><!-- Header Close -->
-
-
-
-            <div class = "container">
-
-             <div id="login">
-
-        <h2><span class="fontawesome-lock"></span>Sign In</h2>
-
-        <form action="#" method="POST">
-
-          <fieldset>
-
-            <p><label for="email">E-mail address</label></p>
-            <p><input type="email" id="email" placeholder="mail@address.com"></p>
-
-            <p><label for="password">Password</label></p>
-            <p><input type="password" id="password" placeholder="password"></p>
-
-            <p><input type="submit" value="Sign In"></p>
-
-          </fieldset>
-
-        </form>
-
-         <div class = "login-help">
-            <p>Forgot Password ? <a href = "#">Click here to reset it </a>.</p>
-         </div>
-
-      </div> <!-- end login -->
-
-
-               
-            </div> <!-- container close here -->
-           <footer class="footer">
-           <a href="http://www.at-crafts.com/main/index.php" target="_blank"><img src="../image/crafts.jpg" alt="CRAFTS Inc." /></a>
-           <p>&copy 2015 CRAFTS Inc. All Rights Reserved.</p>
-           </footer>
-
-        </div><!-- wrapper close -->
-
-        </body>
-        </html>
+    <footer class="footer">
+        <a href="http://www.at-crafts.com/main/index.php" target="_blank"><img src="../lib/images/crafts.jpg" alt="CRAFTS Inc." /></a>
+        <p>Copyright &copy 2015 CRAFTS Inc. All Rights Reserved.</p>
+    </footer>
+   </div><!-- wrapper close here -->
+ </body>
+ </html>
