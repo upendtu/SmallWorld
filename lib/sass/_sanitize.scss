@@ -26,3 +26,5 @@ table{border-collapse:collapse;border-spacing:0}
 @media screen{[hidden~=screen]{display:inherit}
 [hidden~=screen]:not(:active):not(:focus):not(:target){clip:rect(0 0 0 0)!important;position:absolute!important}
 }
+
+/*========================Sanitize Css close here ============================*/

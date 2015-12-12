@@ -134,6 +134,7 @@ table {
     position: absolute !important;
   }
 }
+/*========================Sanitize Css close here ============================*/
 /* =======================main page header start here ==========*/
 .main-header {
   min-width: 960px;
@@ -189,7 +190,7 @@ table {
   text-decoration: none;
 }
 
-/*=================Header close ================*/
+/*=================Header Css close here  ================*/
 html {
   font-size: 62.5%;
   height: 100%;
@@ -232,22 +233,121 @@ a:hover {
 }
 
 /*==================Common Css close here ===============*/
-footer {
-  width: 100%;
-  min-width: 960px;
-  position: absolute;
-  bottom: 0px;
-  text-align: center;
-  background-color: #fff;
-}
-footer img {
-  height: 40px;
-}
-footer p {
-  font-size: 0.7rem;
-  margin-bottom: 10px;
+.main {
+  width: 960px;
+  margin: 50px auto 0;
+  padding: 0 30px 100px 30px;
 }
 
+/* =====================Main Div Css close here =====================*/
+.main-page {
+  background: url("../images/icon.png");
+  background-repeat: no-repeat;
+  background-position-x: 110%;
+  background-position-y: -140px;
+  background-color: #66cbff;
+}
+
+.main-left {
+  float: left;
+  width: 300px;
+  padding: 10px 0;
+  text-align: center;
+  position: relative;
+}
+
+.mobile-app {
+  height: 495px;
+}
+.mobile-app img {
+  height: 495px;
+}
+
+.appslide {
+  width: 207.5px;
+  top: 70px;
+  left: 46px;
+  position: absolute;
+  overflow: hidden;
+  background: #000;
+  border: 2px solid #000;
+}
+.appslide figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slidy infinite;
+}
+.appslide img {
+  height: 360px;
+}
+
+@keyframes slidy {
+  0% {
+    left: 0%;
+  }
+  20% {
+    left: 0%;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
+}
+.app-btn {
+  margin-left: 15px;
+  margin-top: 20px;
+}
+
+.main-right {
+  float: right;
+  width: 600px;
+  padding: 10px;
+  color: #fff;
+}
+.main-right h1 {
+  margin-top: 58px;
+  font-size: 1.5rem;
+}
+.main-right p {
+  margin: 40px 0 60px;
+  font-size: 1rem;
+}
+.main-right a {
+  background-color: #4E5FFF;
+  width: 210px;
+  padding: 18px 10px;
+  display: block;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+}
+.main-right a:hover {
+  background-color: #2338FC;
+}
+
+/*=========================Index Page Css close here ======================*/
 .form {
   border: 2px solid #ccc;
   box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
@@ -297,114 +397,23 @@ footer p {
   background-color: #2338FC;
 }
 
-/*==============Form close here ========*/
-.main {
-  width: 960px;
-  margin: 50px auto 0;
-  padding: 0 30px 100px 30px;
-}
-
-.main-page {
-  background: url("../images/icon.png");
-  background-repeat: no-repeat;
-  background-position-x: 110%;
-  background-position-y: -140px;
-  background-color: #66cbff;
-}
-
-.main-left {
-  float: left;
-  width: 300px;
-  padding: 10px 0;
-  text-align: center;
-  position: relative;
-}
-
-.mobile-app {
-  height: 495px;
-}
-
-.appslide {
-  width: 208px;
-  border: 2px #000 solid;
+/*==============Form css close here ========*/
+footer {
+  width: 100%;
+  min-width: 960px;
   position: absolute;
-  top: 70px;
-  left: 46px;
-  overflow: hidden;
-}
-.appslide figure {
-  position: relative;
-  width: 500%;
-  margin: 0;
-  left: 0;
-  text-align: left;
-  font-size: 0;
-  animation: 30s slidy infinite;
-}
-.appslide img {
-  width: 203px;
-}
-
-@keyframes slidy {
-  0% {
-    left: 0%;
-  }
-  20% {
-    left: 0%;
-  }
-  25% {
-    left: -100%;
-  }
-  45% {
-    left: -100%;
-  }
-  50% {
-    left: -200%;
-  }
-  70% {
-    left: -200%;
-  }
-  75% {
-    left: -300%;
-  }
-  95% {
-    left: -300%;
-  }
-  100% {
-    left: -400%;
-  }
-}
-.app-btn {
-  margin-left: 15px;
-  margin-top: 25px;
-}
-
-.main-right {
-  float: right;
-  width: 600px;
-  padding: 10px;
-  color: #fff;
-}
-.main-right h1 {
-  margin-top: 58px;
-  font-size: 1.5rem;
-}
-.main-right p {
-  margin: 40px 0 60px;
-  font-size: 1rem;
-}
-.main-right a {
-  background-color: #4E5FFF;
-  width: 210px;
-  padding: 18px 10px;
-  display: block;
-  font-size: 0.8rem;
-  font-weight: bold;
+  bottom: 0px;
   text-align: center;
-  color: #fff;
+  background-color: #fff;
 }
-.main-right a:hover {
-  background-color: #2338FC;
+footer img {
+  height: 40px;
 }
+footer p {
+  font-size: 0.7rem;
+  margin-bottom: 10px;
+}
+
+/*=====================Footer Css Close here ===============*/
 
 /*# sourceMappingURL=style.css.map */

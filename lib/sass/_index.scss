@@ -15,15 +15,22 @@
 }
 .mobile-app{
   height: 495px;
+
+  img{
+    height: 495px;
+  }
 }
 
 .appslide{
-  width: 208px;
-  border: 2px #000 solid;
-  position: absolute;
+  width: 207.5px;
   top: 70px;
   left: 46px;
+  position: absolute;
   overflow: hidden;
+  background: #000;
+  border: 2px solid #000;
+
+
 
   figure {
   position: relative;
@@ -36,7 +43,8 @@
   }
 
   img {
-    width: 203px;
+    height: 360px;
+
   }
 }
 
@@ -54,7 +62,7 @@
 
   .app-btn{
     margin-left:15px;
-    margin-top: 25px;
+    margin-top: 20px;
   }
 
   .main-right{
@@ -88,3 +96,5 @@
     }
   }
   }
+
+  /*=========================Index Page Css close here ======================*/
