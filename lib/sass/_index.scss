@@ -32,7 +32,7 @@
 
 
 
-  figure {
+/*  figure {
   position: relative;
   width: 500%;
   margin: 0;
@@ -40,7 +40,7 @@
   text-align: left;
   font-size: 0;
   animation: 30s slidy infinite;
-  }
+}*/
 
   img {
     height: 360px;
@@ -48,7 +48,7 @@
   }
 }
 
-@keyframes slidy {
+/*@keyframes slidy {
     0% { left: 0%; }
     20% { left: 0%; }
     25% { left: -100%; }
@@ -58,7 +58,7 @@
     75% { left: -300%; }
     95% { left: -300%; }
     100% { left: -400%; }
-  }
+  }*/
 
   .app-btn{
     margin-left:15px;
