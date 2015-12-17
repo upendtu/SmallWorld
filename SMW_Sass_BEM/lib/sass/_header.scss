@@ -1,0 +1,33 @@
+.header{
+  width: 100%;
+  min-width: 960px;
+  height: 80px;
+  color: #fff;
+
+  .header__logo{
+    float: left;
+    height: 65px;
+    padding: 10px 20px;
+  }
+}
+
+.header__nav{
+  float: right;
+
+  .header__nav__list{
+    padding-right:20px;
+  }
+
+  .nav__item{
+    float: left;
+    margin: 20px 0 0 25px;
+  }
+
+  .nav__link{
+    font-size: 1rem;
+    color: #fff;
+    opacity: 0.9;
+    text-decoration: none;
+
+  }
+}

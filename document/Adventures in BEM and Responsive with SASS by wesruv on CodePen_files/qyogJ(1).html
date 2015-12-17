@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<!-- saved from url=(0072)http://s.codepen.io/wesruv/fullembedgrid/qyogJ?type=embed&animations=run -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="google" value="notranslate">
+
+
+    <title>CodePen - BEM Experiment with SASS</title>
+    
+    
+    <link rel="stylesheet" href="normalize.css">
+
+    
+        <style>
+      /**
+ * Basic Styles
+ */
+body {
+  margin: 0;
+  padding: 0 1em;
+  font: 16px/1.32 Arial, Helvetica, sans-serif;
+  background: #ccc;
+}
+@media only screen and (max-width: 44.9375em) {
+  body {
+    padding: 0;
+  }
+}
+
+a {
+  color: #0033cc;
+}
+
+/**
+ * General Styles
+ */
+.media--image {
+  max-width: 100%;
+  width: auto\9;
+  height: auto;
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+/**
+ * Major Layout Element Styles
+ */
+.page {
+  max-width: 75em;
+  margin: 0 auto;
+  padding: .625rem 1rem 2.5rem;
+  font-size: .875em;
+  background: #fff;
+}
+.page:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+* html .page {
+  zoom: 1;
+}
+*:first-child + html .page {
+  zoom: 1;
+}
+.page__header {
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 1px;
+  float: false;
+  padding-bottom: 1.25rem;
+}
+.page__header:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+* html .page__header {
+  zoom: 1;
+}
+*:first-child + html .page__header {
+  zoom: 1;
+}
+.page__header__logo {
+  width: 50%;
+  box-sizing: border-box;
+  min-height: 1px;
+  float: left;
+  padding: .5em 1em;
+  font-size: 2em;
+}
+@media only screen and (max-width: 44.9375em) {
+  .page__header__logo {
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 1px;
+    float: left;
+    text-align: center;
+    padding: .5em 0;
+  }
+}
+@media only screen and (max-width: 29.9375em) {
+  .page__header__logo {
+    font-size: 1.5em;
+  }
+}
+.page__header__logo .logo__link {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+.page__region--primary {
+  box-sizing: border-box;
+  min-height: 1px;
+  float: left;
+  clear: left;
+}
+@media only screen and (min-width: 60em) {
+  .page__region--primary {
+    width: 66.666%;
+  }
+}
+@media only screen and (min-width: 45em) and (max-width: 59.9375em) {
+  .page__region--primary {
+    width: 75%;
+  }
+}
+@media only screen and (min-width: 45em) {
+  .page__region--primary .content__textWrapper {
+    padding: 0 1.5rem;
+  }
+}
+@media only screen and (min-width: 30em) and (max-width: 44.9375em) {
+  .page__region--primary .content__textWrapper {
+    padding: 0 1rem;
+  }
+}
+.page__region--primary .content__headline {
+  font-size: 1.5em;
+  margin: .8em 0 .5em;
+  padding: 0;
+}
+.page__region--secondary {
+  padding: 0 0 0 1rem;
+}
+.page__region--secondary .content__teaserLink--wrapper {
+  padding: 0 0 .8rem;
+  margin: 0 0 .8rem;
+  border-bottom: .0625rem dotted #999;
+}
+.page__region--secondary .content__media, .page__region--secondary .content__headline {
+  margin: 0 0 .8rem;
+}
+.page__region--secondary .content__headline {
+  font-size: 1.2em;
+  margin: 0 0 .4rem;
+  padding: 0;
+}
+.page__region--secondary .content__teaserCopy {
+  margin: 0 0 .4rem;
+}
+@media only screen and (min-width: 45em) {
+  .page__region--secondary {
+    padding: 0 0 0 1.5rem;
+  }
+}
+@media only screen and (min-width: 60em) {
+  .page__region--secondary {
+    width: 33.333%;
+    box-sizing: border-box;
+    min-height: 1px;
+    float: left;
+  }
+}
+@media only screen and (min-width: 45em) and (max-width: 59.9375em) {
+  .page__region--secondary {
+    width: 25%;
+    box-sizing: border-box;
+    min-height: 1px;
+    float: left;
+  }
+  .page__region--secondary .content__media {
+    margin: 0 0 .4rem;
+  }
+  .page__region--secondary .content__headline {
+    margin-bottom: 0;
+    font-size: 1em;
+  }
+  .page__region--secondary .content__teaserCopy {
+    display: none;
+  }
+}
+@media only screen and (min-width: 30em) and (max-width: 44.9375em) {
+  .page__region--secondary {
+    clear: both;
+    margin: 0 -.8rem;
+  }
+  .page__region--secondary:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+  * html .page__region--secondary {
+    zoom: 1;
+  }
+  *:first-child + html .page__region--secondary {
+    zoom: 1;
+  }
+  .page__region--secondary .region--secondary__content {
+    width: 50%;
+    box-sizing: border-box;
+    min-height: 1px;
+    float: left;
+    padding: 0 .8rem;
+    border-bottom: none;
+  }
+  .page__region--secondary .content__teaserLink--wrapper {
+    border-bottom: none;
+  }
+}
+@media only screen and (max-width: 36.9375em) {
+  .page__region--secondary .content__teaserCopy {
+    display: none;
+  }
+}
+.page__region--footer {
+  clear: left;
+  padding: 1.2rem 1rem 0;
+}
+.page__region--footer:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+* html .page__region--footer {
+  zoom: 1;
+}
+*:first-child + html .page__region--footer {
+  zoom: 1;
+}
+.page__region--footer .siteNav--tertiary {
+  padding: 1.2rem 0 0;
+  border-top: .0625rem solid #ccc;
+  font-size: .8em;
+}
+
+.content__teaserLink {
+  text-decoration: none;
+  color: inherit;
+}
+.content__teaserLink--wrapper {
+  display: block;
+}
+@media only screen and (min-width: 30em) and (max-width: 36.9375em) {
+  .content--main {
+    font-size: 1.2em;
+  }
+}
+@media only screen and (min-width: 37em) and (max-width: 44.9375em) {
+  .content--main {
+    font-size: 1.3em;
+  }
+}
+@media only screen and (min-width: 45em) and (max-width: 51.9375em) {
+  .content--main {
+    font-size: 1.2em;
+  }
+}
+@media only screen and (min-width: 52em) and (max-width: 59.9375em) {
+  .content--main {
+    font-size: 1.3em;
+  }
+}
+@media only screen and (min-width: 60em) and (max-width: 74.9375em) {
+  .content--main {
+    font-size: 1.4em;
+  }
+}
+@media only screen and (min-width: 75em) {
+  .content--main {
+    font-size: 1.5em;
+  }
+}
+
+/**
+ * Navigation Styles
+ */
+.siteNav__list:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+* html .siteNav__list {
+  zoom: 1;
+}
+*:first-child + html .siteNav__list {
+  zoom: 1;
+}
+.siteNav__list, .siteNav__listItem {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.siteNav__listItem {
+  float: left;
+}
+.siteNav__link {
+  text-decoration: none;
+}
+.siteNav--primary {
+  clear: left;
+}
+.siteNav--primary .siteNav__list {
+  margin: 0 -.0625rem;
+}
+.siteNav--primary .siteNav__list:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+* html .siteNav--primary .siteNav__list {
+  zoom: 1;
+}
+*:first-child + html .siteNav--primary .siteNav__list {
+  zoom: 1;
+}
+.siteNav--primary .siteNav__listItem {
+  width: 25%;
+  box-sizing: border-box;
+  min-height: 1px;
+  float: left;
+  padding: 0 .0625rem;
+  font-weight: bold;
+  text-align: center;
+}
+@media only screen and (min-width: 60em) {
+  .siteNav--primary .siteNav__listItem {
+    font-size: 1.2em;
+  }
+}
+@media only screen and (max-width: 51.9375em) {
+  .siteNav--primary .siteNav__listItem {
+    font-size: .8em;
+  }
+}
+@media only screen and (max-width: 36.9375em) {
+  .siteNav--primary .siteNav__listItem {
+    width: 33.333%;
+  }
+  .siteNav--primary .siteNav__listItem--aboutUs {
+    display: none;
+  }
+}
+@media only screen and (max-width: 29.9375em) {
+  .siteNav--primary .siteNav__listItem {
+    width: 100%;
+    padding: .0625rem 0;
+    font-size: .85em;
+  }
+}
+.siteNav--primary .siteNav__link {
+  display: block;
+  padding: .5em 1em;
+  color: #000088;
+  background: #ddd;
+}
+.siteNav--tertiary .siteNav__list {
+  margin: 0 -.8em;
+}
+.siteNav--tertiary .siteNav__listItem {
+  padding: 0 .8em;
+}
+.siteNav--tertiary .siteNav__link {
+  display: block;
+  padding: .4em .8em;
+}
+
+    </style>
+
+    <script>
+  window.console = window.console || function(t) {};
+</script>
+
+    
+    
+  </head>
+
+  <body>
+
+    <div class="page">
+  <header class="page__header">
+    <div class="page__header__logo logo">
+      <a href="http://s.codepen.io/wesruv/fullembedgrid/qyogJ?type=embed&amp;animations=run#" class="logo__link">
+        Veridian Dynamics
+      </a>
+    </div>
+    <nav class="page__header__siteNav siteNav siteNav--primary">
+      <ul class="siteNav__list">
+        <li class="siteNav__listItem siteNav__listItem--products">
+          <a href="http://s.codepen.io/wesruv/fullembedgrid/qyogJ?type=embed&amp;animations=run#" class="siteNav__link">
+            Products
+          </a>
+        </li>
+        <li class="siteNav__listItem siteNav__listItem--customerService">
+          <a href="http://s.codepen.io/wesruv/fullembedgrid/qyogJ?type=embed&amp;animations=run#" class="siteNav__link">
+            Customer "Service"
+          </a>
+        </li>
+        <li class="siteNav__listItem siteNav__listItem--aboutUs">
+          <a href="http://s.codepen.io/wesruv/fullembedgrid/qyogJ?type=embed&amp;animations=run#" class="siteNav__link">
+            About Us
+          </a>
+        </li>
+        <li class="siteNav__listItem siteNav__listItem--contactUs">
+          <a href="http://s.codepen.io/wesruv/fullembedgrid/qyogJ?type=embed&amp;animations=run#" class="siteNav__link">
+            Contact Us
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <section class="page__region page__region--primary">
+    <article class="page__content content content--main">
+      <img class="content__media media--primary media--image" src="fillmurray.jpg" alt="">
+      <div class="content__textWrapper">
+        <h1 class="content__headline headline--primary">
+          Funnertainment made real with new Veridian® pharmaceutical
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <ul>
+          <li>
+            Lorem ipsum dolor
+          </li>
+          <li>
+            Sit amet
+          </li>
+          <li>
+            Consecutor elit sed
+          </li>
+        </ul>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </article>
+  </section>
+  <aside class="page__region page__region--secondary">
+    <article class="region--secondary__content content">
+      <a href="http://s.codepen.io/wesruv/fullembedgrid/qyogJ?type=embed&amp;animations=run#" class="content__teaserLink content__teaserLink--wrapper">
+        <img class="content__media media--primary media--image" src="180" alt="">
+        <h3 class="content__headline headline--primary">
+          Meta-cages on sale now in Cuba!
+        </h3>
+        <p class="content__teaserCopy">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+        </p>
+      </a>
+    </article>
+    <article class="region--secondary__content content">
+      <a href="http://s.codepen.io/wesruv/fullembedgrid/qyogJ?type=embed&amp;animations=run#" class="content__teaserLink content__teaserLink--wrapper">
+        <img class="content__media media--primary media--image" src="180(1)" alt="">
+        <h3 class="content__headline headline--primary">
+          Acting syrum "approved?" by FDA
+        </h3>
+        <p class="content__teaserCopy">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+        </p>
+      </a>
+    </article>
+    <article class="region--secondary__content content">
+      <a href="http://s.codepen.io/wesruv/fullembedgrid/qyogJ?type=embed&amp;animations=run#" class="content__teaserLink content__teaserLink--wrapper">
+        <img class="content__media media--primary media--image" src="180(2)" alt="">
+        <h3 class="content__headline headline--primary">
+          Meta-cages on sale now in Cuba!
+        </h3>
+        <p class="content__teaserCopy">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+        </p>
+      </a>
+    </article>
+    <article class="region--secondary__content content">
+      <a href="http://s.codepen.io/wesruv/fullembedgrid/qyogJ?type=embed&amp;animations=run#" class="content__teaserLink content__teaserLink--wrapper">
+        <img class="content__media media--primary media--image" src="180(1)" alt="">
+        <h3 class="content__headline headline--primary">
+          Acting syrum "approved?" by FDA
+        </h3>
+        <p class="content__teaserCopy">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+        </p>
+      </a>
+    </article>
+  </aside>
+  <footer class="page__region page__region--footer">
+    <nav class="siteNav siteNav--tertiary">
+      <ul class="siteNav__list">
+        <li class="siteNav__listItem">
+          <a href="http://s.codepen.io/wesruv/fullembedgrid/qyogJ?type=embed&amp;animations=run#" class="siteNav__link">
+            "Privacy" Policy
+          </a>
+        </li>
+        <li class="siteNav__listItem">
+          <a href="http://s.codepen.io/wesruv/fullembedgrid/qyogJ?type=embed&amp;animations=run#" class="siteNav__link">
+            Terms of "Use"
+          </a>
+        </li>
+        <li class="siteNav__listItem">
+          <a href="http://s.codepen.io/wesruv/fullembedgrid/qyogJ?type=embed&amp;animations=run#" class="siteNav__link">
+            Investors
+          </a>
+        </li>
+        <li class="siteNav__listItem">
+          <a href="http://s.codepen.io/wesruv/fullembedgrid/qyogJ?type=embed&amp;animations=run#" class="siteNav__link">
+            Test-Subjects
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </footer>
+</div>
+      <script src="stopExecutionOnTimeout-f961f59a28ef4fd551736b43f94620b5.js"></script>
+
+    
+        <script>
+      // Ain't no JS
+      //@ sourceURL=pen.js
+    </script>
+
+    
+    <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+    
+  
+
+ 
+</body></html>

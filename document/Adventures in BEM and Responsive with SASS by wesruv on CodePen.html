@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<!-- saved from url=(0058)http://codepen.io/wesruv/post/adventures-in-bem-responsive -->
+<html lang="en" class="cookie_used_false pc js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta charset="UTF-8">
+
+    <script src="./Adventures in BEM and Responsive with SASS by wesruv on CodePen_files/cookie_used_reload-f70e288cca3b8de3b2a0bf9c9f943f2f.js" type="text/javascript"></script>
+
+
+  <meta name="viewport" content="width=device-width">
+
+  <meta content="authenticity_token" name="csrf-param">
+<meta content="/YaNp88rKjmHCFm26BXRHRd8s+jupJC0Y+qy45UHUVE=" name="csrf-token">
+
+  <title>Adventures in BEM and Responsive with SASS by wesruv on CodePen</title>
+
+  <link href="./Adventures in BEM and Responsive with SASS by wesruv on CodePen_files/css" rel="stylesheet">
+
+  <link href="./Adventures in BEM and Responsive with SASS by wesruv on CodePen_files/global-MQ-9d03ae027a8dc8173f2da5c5716c55e5.css" media="all" rel="stylesheet" type="text/css">
+  <link href="./Adventures in BEM and Responsive with SASS by wesruv on CodePen_files/page-MQ-e69bc638624f21e7072465a049fce747.css" media="all" rel="stylesheet" type="text/css">
+
+
+  
+
+
+  <link href="./Adventures in BEM and Responsive with SASS by wesruv on CodePen_files/post-46ae67f351074c8d9076c4324ac6b53b.css" media="screen" rel="stylesheet" type="text/css">
+
+  
+
+
+  <style>h2 {  margin: 1em -10px;  padding: 1em 10px .5em;  border-top: 3px double #999;  border-bottom: 1px solid #ccc;  color: #2aa198;}.cp_embed_wrapper {  margin-left: -30px;  margin-right: -30px;}.cp_embed_iframe {  box-shadow: 0 5px 5px #ccc;}.blogPost__html {  margin: 1.5em -30px;  padding: 1.5em .9em;  font: bold .8em/1 monospace;  color: #fff;  background: #333;}.html__node {  padding: 0 0 .4em;  color: #2aa198;}.html__node__tag, .html__node__class {  border: 1px solid transparent;  display: inline-block;  padding: .4em .6em .6em .4em;  margin: 0 .4em 0 0;}.html__node__tag {  padding-right: 0;}.html__node__class {  border-color: #000;  border-radius: .5em;  color: #fff;  background: #222;}.indent0:after {  display: none;}.indent1 {  padding-left: 1.75em;}.indent2 {  padding-left: 3.5em;}.indent3 {  padding-left: 5.25em;}.indent4 {  padding-left: 7em;}.indent5 {  padding-left: 8.75em;}.indent6 {  padding-left: 10.5em;}.indent7 {  padding-left: 12.25em;}.indent8 {  padding-left: 14em;}.indent9 {  padding-left: 15.75em;}.indent10 {  padding-left: 17.5em;}</style>
+
+
+  <meta property="og:title" content="Adventures in BEM and Responsive with SASS">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="//codepen.io/wesruv/post/adventures-in-bem-responsive">
+  <meta property="og:site_name" content="CodePen">
+  <meta property="og:image" content="//s3-us-west-2.amazonaws.com/s.cdpn.io/43724/profile/profile-80_2.jpg">
+  <meta property="article:author" content="wesruv">
+
+    <link href="./Adventures in BEM and Responsive with SASS by wesruv on CodePen_files/twilight-99e417babc5d66f1712806b592469cf2.css" id="cm-theme" media="screen" rel="stylesheet" type="text/css">
+
+
+
+  <link rel="shortcut icon" href="http://codepen.io/favicon.ico">
+
+  <script async="" src="./Adventures in BEM and Responsive with SASS by wesruv on CodePen_files/analytics.js"></script>
+
+</head>
+
+<body class="post-post
+    logged-out
+    not-team
+">
+
+  <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" display="none"><symbol id="activity" viewBox="0 0 172.6 189.1"><path fill="#FFF" d="M170.4 144.3c.6-12.6-3.5-23-11.5-32.1-12.4-14.2-19.6-30.7-21.7-49.5-.8-6.8-.6-13.8-1.8-20.5C130.7 14.9 105-2.5 78.9.9c-21.3 2.8-40.5 21-43.1 42.2C35 50.4 35 57.8 34 65c-2.7 18.7-10.6 35.1-23.1 49.3-7.5 8.5-10.6 18.6-9.7 30h169.2z"></path><path d="M170.4 144.3H1.2c-.9-11.4 2.2-21.5 9.7-30C23.3 100.1 31.3 83.7 34 65c1-7.3 1-14.7 1.9-21.9C38.4 21.9 57.7 3.7 78.9.9c26.1-3.4 51.7 14 56.4 41.3 1.2 6.7 1 13.7 1.8 20.5 2.1 18.7 9.4 35.3 21.7 49.5 8.1 9.2 12.1 19.5 11.6 32.1zM64.9 161.8c-.6 2.1-.8 4.4-.7 6.7.6 10.6 9.1 19.3 19.7 19.9 12.3.8 22.4-9 22.4-21.1 0-1.9-.2-3.7-.7-5.4-.4-1.6-1.9-2.7-3.5-2.7H68.4c-1.6 0-3.1 1.1-3.5 2.6z"></path></symbol><symbol id="arrow-circle-right" viewBox="-137.8 144.15001 30.2 27.5"><path d="M-108.3 159.8c.1-.1.1-.1.1-.2 0 0 0-.1.1-.1.3-.4.5-.9.5-1.5s-.2-1.1-.5-1.5v-.1l-.1-.1c0-.1-.1-.1-.1-.2l-11.2-11.2c-1-1-2.6-1-3.6 0s-1 2.6 0 3.6l6.9 6.9h-19.1c-1.4 0-2.5 1.1-2.5 2.5s1.1 2.5 2.5 2.5h19.1l-6.9 6.9c-1 1-1 2.6 0 3.6s2.6 1 3.6 0l11.2-11.1z"></path></symbol><symbol id="arrow-down-mini" viewBox="-122.9 121.1 105.9 61.9"><path d="M-63.2 180.3l43.5-43.5c1.7-1.7 2.7-4 2.7-6.5s-1-4.8-2.7-6.5c-1.7-1.7-4-2.7-6.5-2.7s-4.8 1-6.5 2.7L-69.9 161l-37.2-37.2c-1.7-1.7-4-2.7-6.5-2.7s-4.8 1-6.5 2.6c-1.9 1.8-2.8 4.2-2.8 6.6 0 2.3.9 4.6 2.6 6.5 11.4 11.5 41 41.2 43 43.3l.2.2c3.6 3.6 10.3 3.6 13.9 0z"></path></symbol><symbol id="arrow-left-mini" viewBox="-100.9 99.1 61.9 105.9"><path d="M-98.2 158.8l43.5 43.5c1.7 1.7 4 2.7 6.5 2.7s4.8-1 6.5-2.7c1.7-1.7 2.7-4 2.7-6.5s-1-4.8-2.7-6.5l-37.2-37.2 37.2-37.2c1.7-1.7 2.7-4 2.7-6.5s-1-4.8-2.6-6.5c-1.8-1.9-4.2-2.8-6.6-2.8-2.3 0-4.6.9-6.5 2.6-11.5 11.4-41.2 41-43.3 43l-.2.2c-3.6 3.6-3.6 10.3 0 13.9z"></path></symbol><symbol id="arrow-right-mini" viewBox="-100.9 99.1 61.9 105.9"><path d="M-41.7 145.3l-43.5-43.5c-1.7-1.7-4-2.7-6.5-2.7s-4.8 1-6.5 2.7c-1.7 1.7-2.7 4-2.7 6.5s1 4.8 2.7 6.5L-61 152l-37.2 37.2c-1.7 1.7-2.7 4-2.7 6.5s1 4.8 2.6 6.5c1.8 1.9 4.2 2.8 6.6 2.8 2.3 0 4.6-.9 6.5-2.6 11.5-11.4 41.2-41 43.3-43l.2-.2c3.6-3.6 3.6-10.4 0-13.9z"></path></symbol><symbol id="branch" viewBox="0 0 100 100"><path d="M84.34 62.504c-4.455 0-8.464 1.818-11.314 4.72-.52-.49-1.04-1.005-1.578-1.57-6.965-7.212-14.45-19.19-22.31-29.68C41.16 25.767 32.94 15.563 20.124 15.07H0v14.37h20.126c2.555-.112 6.556 1.992 11.208 6.913 6.96 7.197 14.454 19.17 22.315 29.662 4.82 6.164 9.758 12.293 15.74 16.29 1.99 6.19 7.93 10.687 14.95 10.687 8.647 0 15.66-6.824 15.66-15.244s-7.013-15.244-15.66-15.244zM51.54 29.438h18.987c2.637 4.795 7.83 8.06 13.81 8.06 8.65 0 15.662-6.825 15.662-15.244S92.985 7.01 84.337 7.01c-5.98 0-11.174 3.264-13.81 8.058H36.3c6.007 3.55 10.86 8.924 15.24 14.37z"></path></symbol><symbol id="check" viewBox="0 0 100 100"><path d="M34.357 91.176L0 56.604 16.687 39.81l18.157 18.264 48.954-49.25L100 25.124 34.357 91.177z"></path></symbol><symbol id="cloud" viewBox="0 0 100 100"><path d="M84.187 44.046c.084-.753.114-1.52.114-2.29 0-13.4-10.813-24.256-24.153-24.256-10.354 0-19.16 6.55-22.6 15.754-2.273-2.508-5.52-4.11-9.165-4.11-6.872 0-12.44 5.59-12.44 12.492 0 .816.085 1.606.24 2.38C7.014 45.534 0 53.472 0 63.096 0 73.823 8.648 82.5 19.323 82.5h61.354C91.35 82.5 100 73.824 100 63.095c0-9.505-6.823-17.38-15.813-19.05z"></path></symbol><symbol id="code" viewBox="0 0 100 100"><path d="M28.87 21.5L0 50.004 28.874 78.5 39.37 68.15 21 50.005l18.373-18.13L28.87 21.5zm42.26 0L60.632 31.865l18.378 18.13-18.377 18.127L71.13 78.487 100 49.974 71.13 21.5z"></path></symbol><symbol id="codepen-box" viewBox="0 0 100 100"><path d="M99.96 34.205c-.008-.063-.024-.124-.034-.187-.02-.12-.043-.242-.075-.36-.018-.07-.043-.14-.066-.208-.034-.105-.068-.21-.11-.312-.03-.07-.063-.142-.096-.21-.045-.097-.092-.192-.146-.284-.04-.068-.082-.134-.122-.2-.058-.09-.117-.176-.182-.26-.047-.063-.097-.126-.147-.187-.067-.08-.138-.158-.213-.232-.056-.058-.112-.115-.17-.168-.08-.07-.162-.14-.244-.205-.064-.05-.128-.1-.195-.147-.025-.016-.047-.037-.07-.053L52.382.722c-1.444-.962-3.323-.962-4.767 0L1.914 31.19c-.024.016-.046.037-.07.053-.068.047-.13.098-.194.147-.084.065-.166.134-.243.205-.06.053-.116.11-.172.168-.075.074-.146.153-.213.232-.05.06-.1.124-.148.187-.063.084-.124.17-.18.26-.043.066-.084.132-.124.2-.053.092-.1.187-.146.284-.033.068-.067.14-.096.21-.042.103-.076.208-.11.312-.022.068-.047.137-.067.208-.03.12-.05.24-.074.36-.01.063-.026.124-.034.187-.028.186-.042.373-.042.562v30.468c0 .19.014.376.04.563.008.06.023.124.034.184.022.12.043.242.075.36.02.07.044.14.066.208.034.105.068.21.11.315.03.07.063.14.096.208.046.098.094.192.146.288.04.066.08.13.124.197.056.09.117.176.18.26.047.066.097.127.148.188.067.08.138.158.213.23.057.06.112.116.172.17.078.07.16.14.243.205.063.05.126.1.193.147.026.016.048.037.072.053l45.703 30.47c.723.48 1.554.722 2.385.722.83 0 1.66-.242 2.383-.723l45.703-30.47c.024-.015.045-.036.07-.052.068-.047.13-.097.196-.147.083-.066.164-.134.243-.206.06-.053.115-.11.17-.168.076-.074.147-.153.215-.23.05-.062.1-.122.147-.188.065-.084.124-.17.182-.26.04-.067.082-.132.12-.198.055-.095.102-.19.147-.287.033-.067.067-.136.096-.207.042-.105.076-.21.11-.315.022-.068.048-.137.067-.208.032-.118.054-.24.075-.36.01-.06.026-.124.035-.184.025-.186.04-.373.04-.563V34.765c0-.19-.015-.376-.04-.56zM54.298 12.327L87.965 34.77 72.927 44.83l-18.63-12.46V12.326zm-8.594 0V32.37l-18.63 12.46-15.04-10.06 33.67-22.443zM8.593 42.81L19.346 50l-10.75 7.19V42.81zm37.11 44.862L12.035 65.228l15.04-10.058 18.628 12.46v20.042zM50 60.165L34.802 50 50 39.833 65.198 50 50 60.165zm4.297 27.507V67.63l18.63-12.46 15.04 10.058-33.67 22.444zM91.405 57.19L80.655 50l10.75-7.19v14.38z"></path></symbol><symbol id="comment" viewBox="-405.9 238 56.3 54.8"><path d="M-391 291.4c0 1.5 1.2 1.7 1.9 1.2 1.8-1.6 15.9-14.6 15.9-14.6h19.3c3.8 0 4.4-.8 4.4-4.5v-31.1c0-3.7-.8-4.5-4.4-4.5h-47.4c-3.6 0-4.4.9-4.4 4.5v31.1c0 3.7.7 4.4 4.4 4.4h10.4v13.5z"></path></symbol><symbol id="drag-handle" viewBox="0 0 100 100"><path fill="#606060" d="M0 0h255v11H0z"></path><path fill="#E8E8E8" d="M0 11h255v11H0z"></path><path fill="#606060" d="M0 43h255v11H0z"></path><path fill="#E8E8E8" d="M0 54h255v11H0z"></path><g><path fill="#606060" d="M0 86h255v11H0z"></path><path fill="#E8E8E8" d="M0 97h255v11H0z"></path></g></symbol><symbol id="edit" viewBox="0 0 100 100"><path d="M24.56 92.536L0 100l7.453-24.583c6.356-.244 17.322 10.792 17.107 17.12zM96.617 32.082l-.475.47-28.76-28.786.473-.472C80.782-9.646 109.87 18.81 96.617 32.082zM61.64 9.516L90.398 38.3 44.095 84.647c-1.222 1.22-2.234.884-2.234.884l2.315-15.356-14.454.074.073-14.468-15.342 2.312s-.34-1.01.884-2.234L61.64 9.516z"></path></symbol><symbol id="editor-left" viewBox="0 0 100 100"><path d="M0 0h48.365v27.48H0zM55.95 0H100v100H55.95zM0 36.262h48.365v27.48H0zM0 72.52h48.365V100H0z"></path></symbol><symbol id="editor-right" viewBox="0 0 100 100"><path d="M51.637 72.52H100V100H51.637zM0 0h44.048v100H0zM51.637 36.26H100v27.48H51.637zM51.637 0H100v27.48H51.637z"></path></symbol><symbol id="editor-top" viewBox="0 0 100 100"><path d="M72.52 0H100v48.365H72.52zM0 55.952h100V100H0zM36.26 0h27.48v48.365H36.26zM0 0h27.48v48.365H0z"></path></symbol><symbol id="embed-badge" viewBox="0 0 23 17"><path d="M21 0H2C.9 0 0 .9 0 2v13c0 1.1.9 2 2 2h19c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2zM7.732 6.95c0 .093-.024.178-.072.256-.048.078-.124.145-.228.2l-1.704.92c-.104.055-.214.102-.33.14-.116.038-.238.073-.366.105.128.033.25.066.366.1.116.034.226.08.33.135l1.704.924c.104.054.18.12.228.197.048.076.072.16.072.252v1.29l-4.86-2.54v-.725l4.86-2.544v1.29zm2.94 5.593c-.044.107-.1.203-.17.287-.07.084-.15.154-.235.21-.086.057-.178.1-.276.126-.097.028-.194.043-.29.043h-.792l3.408-8.947c.08-.204.202-.36.366-.468.164-.108.355-.162.57-.162h.793l-3.374 8.91zm9.36-3.612l-4.86 2.54v-1.29c0-.093.023-.177.07-.253.05-.076.125-.143.23-.198l1.704-.925c.1-.056.21-.1.327-.135.117-.034.24-.067.368-.1-.127-.03-.25-.066-.367-.104-.118-.038-.228-.085-.327-.14l-1.704-.92c-.105-.055-.18-.122-.23-.2-.047-.078-.07-.163-.07-.255V5.66l4.86 2.545v.726z"></path></symbol><symbol id="eye" viewBox="0 0 30.5 16.5"><path d="M15.3 0C8.9 0 3.3 3.3 0 8.3c3.3 5 8.9 8.3 15.3 8.3s12-3.3 15.3-8.3C27.3 3.3 21.7 0 15.3 0zm0 14.5c-3.4 0-6.2-2.8-6.2-6.2C9 4.8 11.8 2 15.3 2c3.4 0 6.2 2.8 6.2 6.2 0 3.5-2.8 6.3-6.2 6.3z"></path></symbol><symbol id="facebook" viewBox="-574 359 75 75"><path d="M-511.5 359h-50c-6.874 0-12.5 5.626-12.5 12.502V421.5c0 6.88 5.626 12.5 12.5 12.5h50c6.877 0 12.5-5.62 12.5-12.502v-49.996c0-6.876-5.624-12.502-12.5-12.502zm1.264 37.5h-12.2v32.813H-536.5V396.5h-6.777v-10.735h6.777v-6.972c0-9.473 4.086-15.105 15.225-15.105h12.835v11.614h-10.483c-3.11-.005-3.497 1.622-3.497 4.652l-.017 5.81h14.063l-1.862 10.736z"></path></symbol><symbol id="gear" viewBox="0 0 100 100"><path d="M87.687 45.077c-.313-2.433-.816-4.807-1.542-7.08l8.145-11.73-5.827-7.514-.094-.123-5.825-7.514-12.955 5.577c-2.04-1.265-4.192-2.362-6.46-3.22L59.42 0H40.587l-3.71 13.474c-2.27.857-4.42 1.955-6.463 3.222L17.457 11.12l-5.825 7.513-.097.124-5.822 7.517 8.146 11.73c-.727 2.272-1.234 4.646-1.545 7.08L0 52.032l2.08 9.375.033.15 2.08 9.375 14 .76c1.296 2.03 2.772 3.927 4.4 5.67L20.2 91.587l8.416 4.173.138.068L37.17 100l9.308-10.796c1.16.11 2.335.173 3.524.173s2.358-.074 3.52-.184l9.317 10.804 8.414-4.173.14-.066 8.414-4.172-2.396-14.228c1.628-1.74 3.104-3.64 4.4-5.672l14-.76 2.078-9.374.035-.154L100 52.025l-12.313-6.948zM50.003 34.51c8.435 0 15.272 7.035 15.272 15.72 0 8.678-6.84 15.716-15.272 15.716-8.436 0-15.272-7.038-15.272-15.717 0-8.685 6.84-15.72 15.273-15.72z"></path></symbol><symbol id="github" viewBox="-561 347 100 100"><path d="M-561 401.337c0 4.53.424 8.63 1.272 12.298.847 3.667 2.02 6.854 3.52 9.56s3.408 5.086 5.722 7.14c2.314 2.053 4.825 3.732 7.53 5.036 2.706 1.305 5.795 2.364 9.266 3.18 3.472.814 7.017 1.385 10.636 1.71 3.62.327 7.596.49 11.93.49 4.37 0 8.363-.163 11.98-.49 3.62-.325 7.173-.896 10.66-1.71s6.594-1.875 9.316-3.18 5.25-2.982 7.58-5.036c2.33-2.054 4.254-4.434 5.77-7.14 1.516-2.704 2.697-5.89 3.545-9.56.848-3.667 1.27-7.766 1.27-12.297 0-8.085-2.705-15.078-8.116-20.978.294-.783.563-1.672.808-2.666.245-.994.473-2.412.685-4.254.212-1.842.13-3.97-.245-6.38-.375-2.414-1.068-4.875-2.08-7.385l-.732-.147c-.522-.098-1.378-.073-2.567.073-1.19.147-2.576.44-4.157.88-1.58.44-3.62 1.29-6.112 2.544-2.493 1.255-5.125 2.828-7.896 4.72-4.76-1.305-11.296-1.957-19.61-1.957-8.28 0-14.8.652-19.56 1.956-2.77-1.89-5.42-3.464-7.945-4.72-2.527-1.254-4.54-2.102-6.04-2.542-1.5-.44-2.9-.724-4.205-.855-1.304-.13-2.127-.17-2.47-.122-.342.05-.61.106-.807.17-1.01 2.51-1.703 4.972-2.078 7.385-.375 2.412-.456 4.54-.245 6.38.212 1.843.44 3.26.685 4.255.245.994.513 1.883.807 2.665-5.412 5.9-8.117 12.893-8.117 20.978zm12.274 12.274c0-4.693 2.135-8.997 6.406-12.91 1.27-1.173 2.755-2.06 4.45-2.664 1.695-.603 3.61-.945 5.746-1.027 2.135-.082 4.18-.066 6.137.048 1.956.114 4.368.27 7.237.464 2.87.196 5.346.293 7.433.293 2.087 0 4.564-.098 7.433-.293 2.87-.196 5.28-.35 7.237-.464 1.956-.114 4-.13 6.137-.05 2.135.083 4.05.425 5.746 1.028 1.695.603 3.178 1.49 4.45 2.665 4.27 3.848 6.406 8.15 6.406 12.91 0 2.805-.35 5.29-1.052 7.458-.7 2.168-1.597 3.985-2.69 5.452-1.092 1.467-2.608 2.714-4.548 3.74-1.94 1.028-3.83 1.818-5.672 2.373-1.842.554-4.206.986-7.09 1.296s-5.462.496-7.727.56c-2.266.066-5.143.1-8.63.1-3.49 0-6.366-.034-8.632-.1-2.265-.064-4.84-.252-7.725-.56-2.885-.31-5.248-.743-7.09-1.297-1.842-.554-3.733-1.345-5.672-2.372-1.94-1.026-3.456-2.273-4.548-3.74s-1.99-3.284-2.69-5.452-1.05-4.654-1.05-7.457zm50.226-.985c0-5.178 2.798-9.375 6.25-9.375s6.25 4.197 6.25 9.375-2.798 9.375-6.25 9.375-6.25-4.197-6.25-9.375zm-37.5 0c0-5.178 2.798-9.375 6.25-9.375s6.25 4.197 6.25 9.375-2.798 9.375-6.25 9.375-6.25-4.197-6.25-9.375z"></path></symbol><symbol id="google-plus" viewBox="-600 386 22 22"><path d="M-581.663 386h-14.7c-2.023 0-3.637 1.67-3.637 3.693v14.617c0 2.072 1.614 3.69 3.636 3.69h14.7c2.023 0 3.664-1.62 3.664-3.69v-14.617c0-2.022-1.64-3.693-3.663-3.693zm-3.212.688v3.438h-3.438v-3.438h3.438zm-4.812 0v3.438h-3.438v-3.438h3.438zm-9.625 3.437v-.432c0-1.657 1.323-3.005 2.95-3.005h1.863v3.438h-4.812zm15.812 9.625h-4.125v4.125h-2.75v-4.125h-4.125V397h4.125v-4.125h2.75V397h4.125v2.75zm4.813-9.625h-4.813v-3.438h1.837c1.64 0 2.975 1.348 2.975 3.005v.432z"></path></symbol><symbol id="grid-12" viewBox="-60.74074 20.40741 74.14815 101.39815"><path d="M-47.704 20.407h-8.666c-2.445 0-4.37 1.926-4.37 4.37v8.742c0 2.37 1.925 4.37 4.37 4.37h8.74c2.37 0 4.37-1.927 4.37-4.37v-8.742c-.073-2.445-2-4.37-4.444-4.37zm0 28.297h-8.666c-2.37 0-4.37 1.926-4.37 4.37v8.74c0 2.37 1.925 4.37 4.37 4.37h8.74c2.37 0 4.37-1.925 4.37-4.37v-8.74c-.073-2.37-2-4.37-4.444-4.37zm0 28.37h-8.666c-2.37 0-4.37 1.926-4.37 4.37v8.74c0 2.372 1.925 4.372 4.37 4.372h8.74c2.37 0 4.37-1.926 4.37-4.37v-8.742c-.073-2.444-2-4.37-4.444-4.37zm28.37-56.667h-8.74c-2.37 0-4.37 1.926-4.37 4.37v8.742c0 2.37 1.925 4.37 4.37 4.37h8.74c2.37 0 4.37-1.927 4.37-4.37v-8.742c0-2.445-2-4.37-4.37-4.37zm0 28.297h-8.74c-2.37 0-4.37 1.926-4.37 4.37v8.74c0 2.37 1.925 4.37 4.37 4.37h8.74c2.37 0 4.37-1.925 4.37-4.37v-8.74c0-2.37-2-4.37-4.37-4.37zm0 28.37h-8.74c-2.37 0-4.37 1.926-4.37 4.37v8.74c0 2.372 1.925 4.372 4.37 4.372h8.74c2.37 0 4.37-1.926 4.37-4.37v-8.742c0-2.444-2-4.37-4.37-4.37zM8.964 20.407H.296c-2.37 0-4.37 1.926-4.37 4.37v8.742c0 2.37 1.926 4.37 4.37 4.37h8.74c2.37 0 4.37-1.927 4.37-4.37v-8.742c-.073-2.445-2-4.37-4.443-4.37zm0 28.297H.296c-2.37 0-4.37 1.926-4.37 4.37v8.74c0 2.37 1.926 4.37 4.37 4.37h8.74c2.37 0 4.37-1.925 4.37-4.37v-8.74c-.073-2.37-2-4.37-4.443-4.37zm0 28.37H.296c-2.37 0-4.37 1.926-4.37 4.37v8.74c0 2.372 1.926 4.372 4.37 4.372h8.74c2.37 0 4.37-1.926 4.37-4.37v-8.742c-.073-2.444-2-4.37-4.443-4.37zm-56.667 27.25h-8.666c-2.37 0-4.37 1.926-4.37 4.37v8.74c0 2.372 1.925 4.372 4.37 4.372h8.74c2.37 0 4.37-1.926 4.37-4.37v-8.742c-.073-2.444-2-4.37-4.444-4.37zm28.37 0h-8.74c-2.37 0-4.37 1.926-4.37 4.37v8.74c0 2.372 1.925 4.372 4.37 4.372h8.74c2.37 0 4.37-1.926 4.37-4.37v-8.742c0-2.444-2-4.37-4.37-4.37zm28.297 0H.296c-2.37 0-4.37 1.926-4.37 4.37v8.74c0 2.372 1.926 4.372 4.37 4.372h8.74c2.37 0 4.37-1.926 4.37-4.37v-8.742c-.073-2.444-2-4.37-4.443-4.37z"></path></symbol><symbol id="grid-6" viewBox="-60.74074 20.40741 74.14815 45.77778"><path d="M-47.704 20.407h-8.666c-2.445 0-4.37 1.926-4.37 4.37v8.742c0 2.37 1.925 4.37 4.37 4.37h8.74c2.37 0 4.37-1.927 4.37-4.37v-8.742c-.073-2.445-2-4.37-4.444-4.37zM-47.704 48.704h-8.666c-2.37 0-4.37 1.926-4.37 4.37v8.74c0 2.37 1.925 4.37 4.37 4.37h8.74c2.37 0 4.37-1.925 4.37-4.37v-8.74c-.073-2.37-2-4.37-4.444-4.37zM-19.333 20.407h-8.74c-2.37 0-4.37 1.926-4.37 4.37v8.742c0 2.37 1.924 4.37 4.37 4.37h8.74c2.37 0 4.37-1.927 4.37-4.37v-8.742c0-2.445-2-4.37-4.37-4.37zM-19.333 48.704h-8.74c-2.37 0-4.37 1.926-4.37 4.37v8.74c0 2.37 1.924 4.37 4.37 4.37h8.74c2.37 0 4.37-1.925 4.37-4.37v-8.74c0-2.37-2-4.37-4.37-4.37zM8.963 20.407H.296c-2.37 0-4.37 1.926-4.37 4.37v8.742c0 2.37 1.926 4.37 4.37 4.37h8.74c2.37 0 4.37-1.927 4.37-4.37v-8.742c-.073-2.445-2-4.37-4.443-4.37zM8.963 48.704H.296c-2.37 0-4.37 1.926-4.37 4.37v8.74c0 2.37 1.926 4.37 4.37 4.37h8.74c2.37 0 4.37-1.925 4.37-4.37v-8.74c-.073-2.37-2-4.37-4.443-4.37z"></path></symbol><symbol id="grid" viewBox="0 0 100 100"><path d="M0 0h23.81v23.81H0zM38.095 0h23.81v23.81h-23.81zM76.19 0H100v23.81H76.19zM0 38.095h23.81v23.81H0zM38.095 38.095h23.81v23.81h-23.81zM76.19 38.095H100v23.81H76.19zM0 76.19h23.81V100H0zM38.095 76.19h23.81V100h-23.81zM76.19 76.19H100V100H76.19z"></path></symbol><symbol id="heart" viewBox="-475.95303 277.92847 100 86.80724"><path d="M-390.717 280.6c-12.944-5.753-29.483 0-35.236 12.225-5.753-12.944-23.012-18.697-35.236-12.225-13.662 6.472-20.134 22.293-9.348 41.708 7.91 13.663 21.574 23.73 44.585 42.428 23.73-18.697 37.394-28.765 44.585-42.428 10.786-18.696 4.314-35.236-9.35-41.708z"></path></symbol><symbol id="help" viewBox="0 0 100 100"><path d="M75 0H25C11.19 0 0 11.193 0 25v50c0 13.802 11.19 25 25 25h50c13.81 0 25-11.198 25-25V25c0-13.807-11.19-25-25-25zM57.203 85.067h-15.7V72.542h15.7v12.525zM73.357 42.04c-.84 2.067-1.873 3.835-3.102 5.3-1.235 1.473-2.604 2.717-4.1 3.75-1.5 1.035-2.923 2.066-4.25 3.1-1.333 1.035-1.553 2.215-2.596 3.548-1.026 1.335-.978 3.004-.978 5.006v3.924H41.668v-4.623c0-2.864 1.366-5.265 2.27-7.202.896-1.935 2.255-3.58 3.46-4.947 1.195-1.367 2.62-2.556 3.954-3.557 1.327-.994 2.637-1.994 3.776-2.996 1.123-1 2.083-2.1 2.783-3.304.7-1.197 1.044-2.694.978-4.5 0-3.06-.74-5.33-2.245-6.795-1.498-1.465-3.582-2.206-6.25-2.206-1.8 0-3.337.35-4.64 1.05-1.302.7-2.368 1.634-3.198 2.807-.837 1.163-1.448 3.593-1.847 5.156-.407 1.57-.602 6.115-.602 6.115H25.4c.072-8.333.683-7.963 1.854-10.965 1.164-2.995 2.8-6.132 4.9-8.33 2.098-2.197 4.63-4.18 7.6-5.417 2.962-1.228 6.283-1.977 9.945-1.977 4.735 0 8.682.58 11.855 1.875 3.167 1.302 5.713 2.89 7.65 4.817 1.93 1.937 3.312 4.004 4.15 6.234.83 2.237 1.244 4.313 1.244 6.242 0 3.206-.413 5.827-1.243 7.893z"></path></symbol><symbol id="lock" viewBox="0 0 100 125"><path d="M79.244 100H20.757c-2.085 0-3.774-1.69-3.774-3.775V58.113c0-2.084 1.69-3.773 3.774-3.773h3.773V38.19c0-14.065 11.403-25.47 25.47-25.47 14.066 0 25.47 11.404 25.47 25.47v16.15h3.774c2.084 0 3.773 1.69 3.773 3.773v38.11c0 2.088-1.69 3.777-3.773 3.777zM63.482 38.945c0-7.445-6.037-13.48-13.48-13.48-7.447 0-13.482 6.035-13.482 13.48V54.34h26.963V38.945z"></path></symbol><symbol id="mag" viewBox="0 0 56.7 56.7"><path d="M42.8 7.3C33-2.4 17.1-2.4 7.3 7.3c-9.8 9.8-9.8 25.7 0 35.5 8.7 8.7 22.2 9.7 32 2.9l9.6 9.6c1.8 1.8 4.7 1.8 6.4 0 1.8-1.8 1.8-4.7 0-6.4l-9.6-9.6c6.8-9.8 5.8-23.3-2.9-32zm-6.2 29.3c-6.4 6.4-16.7 6.4-23.1 0s-6.4-16.7 0-23.1c6.4-6.4 16.7-6.4 23.1 0 6.4 6.4 6.4 16.8 0 23.1z"></path></symbol><symbol id="menu" viewBox="0 0 100 100"><path d="M0 3.415h100v22.532H0zM0 38.734h100v22.532H0zM0 74.053h100v22.532H0z"></path></symbol><symbol id="rerun" viewBox="0 0 100 100"><path d="M55.702 50.002L77.85 72.324 100 50.002l-9.173-9.25-6.61 6.67C82.876 25.186 64.56 7.5 42.168 7.5 18.915 7.5 0 26.567 0 50.002 0 73.436 18.917 92.5 42.17 92.5h16.217V79.424H42.17c-16.103 0-29.194-13.197-29.194-29.42 0-16.23 13.092-29.427 29.193-29.427 15.08 0 27.37 11.615 28.89 26.41l-6.183-6.233-9.175 9.248z"></path></symbol><symbol id="rss" viewBox="0 0 100 100"><path d="M7.336 62.163c-.388-.075-.783-.112-1.17-.112-1.42 0-2.81.492-3.924 1.41C.822 64.632 0 66.375 0 68.216v25.617C0 97.238 2.76 100 6.166 100h25.616c1.84 0 3.586-.822 4.757-2.243 1.17-1.42 1.645-3.287 1.296-5.098-2.96-15.282-15.216-27.54-30.5-30.497z"></path><path d="M6.764 30.957c-.2-.02-.4-.03-.597-.03-1.525 0-3.005.564-4.142 1.6C.733 33.7 0 35.358 0 37.098v3.097c0 3.164 2.394 5.812 5.536 6.136 25.302 2.59 45.544 22.83 48.136 48.132.322 3.146 2.973 5.54 6.135 5.54h3.098c1.74 0 3.398-.733 4.566-2.024 1.17-1.286 1.74-3.01 1.572-4.74-3.2-32.89-29.392-59.08-62.278-62.28z"></path><path d="M99.986 93.43C96.732 43.43 56.568 3.27 6.566.013 6.43.005 6.297 0 6.165 0 4.604 0 3.096.593 1.95 1.667.705 2.832 0 4.46 0 6.167v3.088c0 3.247 2.515 5.938 5.752 6.155 42.113 2.832 76.006 36.726 78.84 78.84.22 3.235 2.906 5.75 6.15 5.75h3.09c1.707 0 3.336-.706 4.5-1.95 1.166-1.245 1.766-2.915 1.654-4.62z"></path></symbol><symbol id="share" viewBox="0 0 100 100"><path d="M75 46.226v15.096l25-25.16L75 11v12.58c-38.25.25-37.5 37.743-37.5 37.743S51.126 42.477 75 46.226zm-20-32.71H7.5c-6.15 0-7.5 1.76-7.5 7.55V81.45C0 87.718 1.5 89 7.5 89H80c6.025 0 7.5-1.133 7.5-7.548v-20.13L75 72.117v4.302H12.5V26.096h30L55 13.517z"></path></symbol><symbol id="sort-down" viewBox="0 0 100 100"><path fill="#FFF" d="M100 54l-50 46L0 54"></path><path fill="#727373" d="M0 46L50 0l50 46"></path></symbol><symbol id="sort-up" viewBox="0 0 100 100"><path fill="#FFF" d="M0 46L50 0l50 46"></path><path fill="#727373" d="M100 54l-50 46L0 54"></path></symbol><symbol id="sort" viewBox="0 0 100 100"><path fill="#727373" d="M0 46L50 0l50 46M100 54l-50 46L0 54"></path></symbol><symbol id="tv" viewBox="0 0 64.3 66.07"><title>tv</title><path d="M60.27 62.06H4V20.2h56.27v41.86zm2-45.87H36.38l6.9-6.9a1.57 1.57 0 1 0-2.23-2.23l-8.66 8.66L17.12.46a1.57 1.57 0 1 0-2.22 2.23l13.49 13.49H2a2 2 0 0 0-2 2v45.88a2 2 0 0 0 2 2h60.29a2 2 0 0 0 2-2V18.19a2 2 0 0 0-2.01-2.01z"></path><rect x="9.12" y="25.24" width="39.22" height="31.76" rx="1.28" ry="1.28"></rect><path d="M56.74 29.29a2.38 2.38 0 0 1-4.76 0 2.38 2.38 0 1 1 4.76 0M56.74 36.35a2.38 2.38 0 0 1-4.76 0 2.38 2.38 0 0 1 4.76 0"></path></symbol><symbol id="twitter" viewBox="0 0 100 100"><path d="M100 17.942c-3.68 1.688-7.632 2.826-11.782 3.34 4.236-2.625 7.49-6.78 9.02-11.73-3.964 2.43-8.353 4.192-13.025 5.145C80.47 10.575 75.138 8 69.233 8c-11.33 0-20.517 9.494-20.517 21.205 0 1.662.183 3.28.533 4.833-17.053-.884-32.17-9.326-42.29-22.155-1.766 3.133-2.777 6.773-2.777 10.66 0 7.356 3.622 13.848 9.127 17.65-3.363-.11-6.525-1.065-9.293-2.652-.002.09-.002.18-.002.27 0 10.27 7.072 18.844 16.458 20.792-1.72.484-3.534.744-5.405.744-1.322 0-2.606-.134-3.86-.38 2.61 8.425 10.188 14.556 19.167 14.727-7.02 5.688-15.867 9.077-25.48 9.077-1.656 0-3.29-.102-4.895-.297C9.08 88.49 19.865 92 31.45 92c37.736 0 58.373-32.312 58.373-60.336 0-.92-.02-1.834-.06-2.743 4.008-2.99 7.488-6.725 10.238-10.978z"></path></symbol><symbol id="user" viewBox="-255 347 100 100"><path d="M-205 352c-24.9 0-45 20.1-45 45s20.1 45 45 45 45-20.1 45-45-20.1-45-45-45zm-26 72.4c1.8-.8 3.6-1.4 5.5-1.9 5.2-1.2 8.3-2.9 9.3-5.1.8-1.7.3-4-1.2-6.9-9.6-17.7-7.9-27.7-4.8-32.9 3.1-5.3 9.1-8.2 16.7-8.2s13.5 2.9 16.6 8.1c3.1 5.2 4.8 15.2-4.7 33-1.6 3-2 5.3-1.2 7 1 2.1 4.1 3.8 9.3 5 1.8.4 4 1.1 6.3 2.1-6.7 6.3-15.8 10.1-25.7 10.1-10.2.1-19.3-3.9-26.1-10.3z"></path></symbol><symbol id="viewswitcher" viewBox="-703.9 491.1 31.7 25.3"><path d="M-688.1 499.6c-4.3 0-8.1 2.2-10.4 5.6 2.2 3.4 6 5.6 10.4 5.6 4.3 0 8.1-2.2 10.4-5.6-2.2-3.3-6-5.6-10.4-5.6zm0 9.9c-2.3 0-4.2-1.9-4.2-4.2-.1-2.4 1.8-4.3 4.2-4.3 2.3 0 4.2 1.9 4.2 4.2 0 2.4-1.9 4.3-4.2 4.3z"></path><path d="M-673.4 491.1h-29.3c-.7 0-1.2.5-1.2 1.2v22.9c0 .7.5 1.2 1.2 1.2h29.3c.7 0 1.2-.5 1.2-1.2v-22.9c0-.6-.6-1.2-1.2-1.2zm-28.1 22.9v-17.1h26.8V514h-26.8z"></path></symbol><symbol id="x" viewBox="0 0 100 100"><path d="M100 78.905L78.735 100 49.608 71.094 21.263 99.217 0 78.123 28.344 50 0 21.877 21.263.78l28.345 28.125L78.735 0 100 21.094 70.862 50"></path></symbol><symbol id="zip-badge" viewBox="0 0 23 17"><path d="M18.18 5.76c-.12-.118-.275-.21-.46-.273-.187-.064-.408-.096-.664-.096H16v2.773h1.056c.528 0 .908-.126 1.14-.378.232-.252.348-.604.348-1.056 0-.2-.03-.383-.09-.547-.06-.164-.15-.305-.273-.423zM21 0H2C.9 0 0 .9 0 2v13c0 1.1.9 2 2 2h19c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2zM9.208 4.605c0 .104-.017.206-.05.306-.035.1-.082.195-.142.283l-4.104 5.862h4.164v1.56H2.332v-.78c0-.093.016-.184.048-.273.032-.09.076-.173.132-.25l4.116-5.88h-3.96v-1.56h6.54v.733zm3.145 8.01h-2.04V3.872h2.04v8.74zm8.01-4.686c-.14.363-.355.675-.643.935-.288.26-.654.462-1.095.61-.442.144-.965.217-1.57.217H16v2.922h-2.028v-8.74h3.084c.616 0 1.145.072 1.587.218.442.146.806.347 1.092.603.286.256.496.558.633.906.136.35.204.725.204 1.13 0 .435-.07.835-.21 1.2z"></path></symbol></svg>
+
+  <header class="main-header lowkey-header">
+
+  <h1 class="logo header-chunk">
+
+  <a href="http://codepen.io/" class="small-screen-logo">
+    <svg class="icon-codepen-box">
+      <use xlink:href="#codepen-box"></use>
+    </svg>
+  </a>
+
+  <a href="http://codepen.io/" class="large-screen-logo">
+    CodePen
+  </a>
+
+</h1>
+
+  <div class="fill-space"></div>
+
+  
+  <div class="user-stuff header-chunk">
+
+    <a href="https://codepen.io/login" class="button button-medium login-button" id="login-button">Log In</a>
+
+    <a href="http://codepen.io/signup/" class="button button-medium signup-button">Sign Up</a>
+
+  </div>
+
+
+
+</header>
+
+  
+
+<main>
+
+<article class="post">
+
+  <header class="post-header mega-header">
+
+    <div class="width-wrapper">
+
+      <h1 class="post-title">Adventures in BEM and Responsive with SASS</h1>
+
+      <div class="content-author user">
+        
+<a class="avatar-push" href="http://codepen.io/wesruv/">
+  <img src="./Adventures in BEM and Responsive with SASS by wesruv on CodePen_files/profile-80_2.jpg" alt="" width="20" height="20" class="avatar">
+</a>
+
+<a class="author-link" href="http://codepen.io/wesruv/">
+  wesruv
+</a>
+
+
+  <span id="following-div">
+
+
+      <a id="follow-unfollow-button" class="button button-medium mini-button" href="http://codepen.io/wesruv/post/adventures-in-bem-responsive#0" data-value="follow">
+        Follow
+      </a>
+
+
+  </span>
+
+
+
+  <span class="blog-meta-spacer">|</span>
+
+  <a class="author-link" href="http://codepen.io/wesruv/posts/published/">
+    <strong>wesruv's Blog</strong>
+  </a>
+
+      </div>
+
+      <div class="actions-meta">
+
+          <div class="meta-line">
+            <time class="date-block" title="Last updated on Jul 16, 2014">Jul 16, 2014</time>
+          </div>
+
+            <div class="post-meta-line post-meta-line-hearter">
+      <a href="http://codepen.io/wesruv/post/adventures-in-bem-responsive#0" id="loves_ZNqWGD" data-item="post" data-hashid="ZNqWGD" data-owned="false" class="button button-medium hearter big-hearter heart-button loves loved-0">
+        <svg class="icon-heart">
+          <use xlink:href="#heart"></use>
+        </svg>
+        <svg class="icon-heart icon-animator">
+          <use xlink:href="#heart"></use>
+        </svg>
+      </a>
+    </div>
+
+
+
+
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <div class="width-wrapper">
+
+    <div class="blog-post">
+
+      <div class="post-content">
+
+        <section class="post-body">
+          <h2>Objective</h2>
+
+<p>I've been trying to wrap my head around how to apply BEM and the pros and cons of using it (or something like it). For those of you that are unfamiliar, <a href="http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/">BEM (stands for Block Element Modifier) is mostly about how to write classes in HTML</a>. You end up with much longer classes than you're probably used to, but you will understand what's being built just by reading the selectors; before you even look at the markup.</p>
+
+<p>Another tenet of a lot of these CSS frameworks is keeping low specificity by using class selectors, and not tag selectors. <a href="http://css-tricks.com/efficiently-rendering-css/">The issue with tag selectors is how the CSS is read by the browser</a>. Choosing to use classes and not ID's is to keep specificity low.</p>
+
+<h3>Here's the rendered result in Codepen</h3>
+
+<div class="cp_embed_wrapper"><div><iframe id="cp_embed_qyogJ" src="./Adventures in BEM and Responsive with SASS by wesruv on CodePen_files/qyogJ.html" scrolling="no" frameborder="0" height="500" allowtransparency="true" allowfullscreen="true" name="CodePen Embed" title="CodePen Embed" class="cp_embed_iframe undefined" style="width: 100%; overflow: hidden;"></iframe></div></div>
+
+<h3>Below is a breakdown of how I wrote my classes and markup:</h3>
+
+<div class="blogPost__html">
+<div class="html__node indent0"><span class="html__node__tag">div</span><span class="html__node__class">.page</span></div>
+<div class="html__node indent1"><span class="html__node__tag">header</span><span class="html__node__class">.page__header</span></div>
+<div class="html__node indent2"><span class="html__node__tag">div</span><span class="html__node__class">.page__header__logo</span><span class="html__node__class">.logo</span></div>
+<div class="html__node indent3"><span class="html__node__tag">a</span><span class="html__node__class">.logo__link</span></div>
+<div class="html__node indent2"><span class="html__node__tag">nav</span><span class="html__node__class">.page__header__siteNav</span><span class="html__node__class">.siteNav</span><span class="html__node__class">.siteNav--primary</span></div>
+<div class="html__node indent3"><span class="html__node__tag">ul</span><span class="html__node__class">.siteNav__list</span></div>
+<div class="html__node indent4"><span class="html__node__tag">li</span><span class="html__node__class">.siteNav__listItem</span><span class="html__node__class">.siteNav__listItem--products</span></div>
+<div class="html__node indent5"><span class="html__node__tag">a</span><span class="html__node__class">.siteNav__link</span></div>
+<div class="html__node indent4"><span class="html__node__tag">li</span><span class="html__node__class">.siteNav__listItem</span><span class="html__node__class">.siteNav__listItem--customerService</span></div>
+<div class="html__node indent5"><span class="html__node__tag">a</span><span class="html__node__class">.siteNav__link</span></div>
+<div class="html__node indent4"><span class="html__node__tag">li</span><span class="html__node__class">.siteNav__listItem</span><span class="html__node__class">.siteNav__listItem--aboutUs</span></div>
+<div class="html__node indent5"><span class="html__node__tag">a</span><span class="html__node__class">.siteNav__link</span></div>
+<div class="html__node indent4"><span class="html__node__tag">li</span><span class="html__node__class">.siteNav__listItem</span><span class="html__node__class">.siteNav__listItem--contactUs</span></div>
+<div class="html__node indent5"><span class="html__node__tag">a</span><span class="html__node__class">.siteNav__link</span></div>
+<div class="html__node indent1"><span class="html__node__tag">section</span><span class="html__node__class">.page__region</span><span class="html__node__class">.page__region--primary</span></div>
+<div class="html__node indent2"><span class="html__node__tag">article</span><span class="html__node__class">.page__content</span><span class="html__node__class">.content</span><span class="html__node__class">.content--main</span></div>
+<div class="html__node indent3"><span class="html__node__tag">img</span><span class="html__node__class">.content__media</span><span class="html__node__class">.media--primary</span><span class="html__node__class">.media--image</span></div>
+<div class="html__node indent3"><span class="html__node__tag">div</span><span class="html__node__class">.content__textWrapper</span></div>
+<div class="html__node indent4"><span class="html__node__tag">h1</span><span class="html__node__class">.content__headline</span><span class="html__node__class">.headline--primary</span></div>
+<div class="html__node indent4"><span class="html__node__tag">p</span></div>
+<div class="html__node indent4"><span class="html__node__tag">ul</span></div>
+<div class="html__node indent5"><span class="html__node__tag">li</span></div>
+<div class="html__node indent5"><span class="html__node__tag">li</span></div>
+<div class="html__node indent5"><span class="html__node__tag">li</span></div>
+<div class="html__node indent4"><span class="html__node__tag">p</span></div>
+<div class="html__node indent4"><span class="html__node__tag">p</span></div>
+<div class="html__node indent4"><span class="html__node__tag">p</span></div>
+<div class="html__node indent1"><span class="html__node__tag">aside</span><span class="html__node__class">.page__region</span><span class="html__node__class">.page__region--secondary</span></div>
+<div class="html__node indent2"><span class="html__node__tag">article</span><span class="html__node__class">.region--secondary__content</span><span class="html__node__class">.content</span></div>
+<div class="html__node indent3"><span class="html__node__tag">a</span><span class="html__node__class">.content__teaserLink</span><span class="html__node__class">.content__teaserLink--wrapper</span></div>
+<div class="html__node indent4"><span class="html__node__tag">img</span><span class="html__node__class">.content__media</span><span class="html__node__class">.media--primary</span><span class="html__node__class">.media--image</span></div>
+<div class="html__node indent4"><span class="html__node__tag">h3</span><span class="html__node__class">.content__headline</span><span class="html__node__class">.headline--primary</span></div>
+<div class="html__node indent4"><span class="html__node__tag">p</span><span class="html__node__class">.content__teaserCopy</span></div>
+<div class="html__node indent2"><span class="html__node__tag">article</span><span class="html__node__class">.region--secondary__content</span><span class="html__node__class">.content</span></div>
+<div class="html__node indent3"><span class="html__node__tag">a</span><span class="html__node__class">.content__teaserLink</span><span class="html__node__class">.content__teaserLink--wrapper</span></div>
+<div class="html__node indent4"><span class="html__node__tag">img</span><span class="html__node__class">.content__media</span><span class="html__node__class">.media--primary</span><span class="html__node__class">.media--image</span></div>
+<div class="html__node indent4"><span class="html__node__tag">h3</span><span class="html__node__class">.content__headline</span><span class="html__node__class">.headline--primary</span></div>
+<div class="html__node indent4"><span class="html__node__tag">p</span><span class="html__node__class">.content__teaserCopy</span></div>
+<div class="html__node indent2"><span class="html__node__tag">article</span><span class="html__node__class">.region--secondary__content</span><span class="html__node__class">.content</span></div>
+<div class="html__node indent3"><span class="html__node__tag">a</span><span class="html__node__class">.content__teaserLink</span><span class="html__node__class">.content__teaserLink--wrapper</span></div>
+<div class="html__node indent4"><span class="html__node__tag">img</span><span class="html__node__class">.content__media</span><span class="html__node__class">.media--primary</span><span class="html__node__class">.media--image</span></div>
+<div class="html__node indent4"><span class="html__node__tag">h3</span><span class="html__node__class">.content__headline</span><span class="html__node__class">.headline--primary</span></div>
+<div class="html__node indent4"><span class="html__node__tag">p</span><span class="html__node__class">.content__teaserCopy</span></div>
+<div class="html__node indent2"><span class="html__node__tag">article</span><span class="html__node__class">.region--secondary__content</span><span class="html__node__class">.content</span></div>
+<div class="html__node indent3"><span class="html__node__tag">a</span><span class="html__node__class">.content__teaserLink</span><span class="html__node__class">.content__teaserLink--wrapper</span></div>
+<div class="html__node indent4"><span class="html__node__tag">img</span><span class="html__node__class">.content__media</span><span class="html__node__class">.media--primary</span><span class="html__node__class">.media--image</span></div>
+<div class="html__node indent4"><span class="html__node__tag">h3</span><span class="html__node__class">.content__headline</span><span class="html__node__class">.headline--primary</span></div>
+<div class="html__node indent4"><span class="html__node__tag">p</span><span class="html__node__class">.content__teaserCopy</span></div>
+<div class="html__node indent1"><span class="html__node__tag">footer</span><span class="html__node__class">.page__region</span><span class="html__node__class">.page__region--footer</span></div>
+<div class="html__node indent2"><span class="html__node__tag">nav</span><span class="html__node__class">.siteNav</span><span class="html__node__class">.siteNav--tertiary</span></div>
+<div class="html__node indent3"><span class="html__node__tag">ul</span><span class="html__node__class">.siteNav__list</span></div>
+<div class="html__node indent4"><span class="html__node__tag">li</span><span class="html__node__class">.siteNav__listItem</span></div>
+<div class="html__node indent5"><span class="html__node__tag">a</span><span class="html__node__class">.siteNav__link</span></div>
+<div class="html__node indent4"><span class="html__node__tag">li</span><span class="html__node__class">.siteNav__listItem</span></div>
+<div class="html__node indent5"><span class="html__node__tag">a</span><span class="html__node__class">.siteNav__link</span></div>
+<div class="html__node indent4"><span class="html__node__tag">li</span><span class="html__node__class">.siteNav__listItem</span></div>
+<div class="html__node indent5"><span class="html__node__tag">a</span><span class="html__node__class">.siteNav__link</span></div>
+<div class="html__node indent4"><span class="html__node__tag">li</span><span class="html__node__class">.siteNav__listItem</span></div>
+<div class="html__node indent5"><span class="html__node__tag">a</span><span class="html__node__class">.siteNav__link</span></div>
+</div>
+
+<h2>A bit of background</h2>
+
+<h3>My Bias</h3>
+
+<p>I think it's important to note that I'm used to building larger scale sites, and I'm used to being an in-house CSS developer. My concerns are with maintainability and scalability in a CMS environment.</p>
+
+<p>At this point, I only write my CSS in a preprocessor (preferably SASS).</p>
+
+<h3>Other frameworks I've looked at or tried</h3>
+
+<p>I used <a href="http://getbootstrap.com/2.3.2/">Twitter's Bootstrap</a> for a time, it was good for it's features, and I didn't have to write it myself; but it has too much bulk.</p>
+
+<p>I'm not a fan of <a href="http://www.smashingmagazine.com/2011/12/12/an-introduction-to-object-oriented-css-oocss/">OOCSS</a> because:</p>
+
+<ul>
+<li>I didn't like the naming conventions of classes</li>
+<li>I don't like amount of classes that resulted, the framework assumes you need a large site</li>
+<li>I loathe the idea of always having to change markup (classes) when I want to change the presentation (I don't expect to never have to change classes, but it seems a guaruntee that they change if the presentation is altered)</li>
+<li>Some of the naming conventions describe presentation pretty closely. This can be very troublesome when dealing with responsive layouts and presentation changes.</li>
+</ul>
+
+<p>OOCSS and <a href="http://www.smashingmagazine.com/2013/10/21/challenging-css-best-practices-atomic-approach/">Atomic Stylesheets</a> seem like a <em>really</em> good idea if an application compiles your markup and your styles from higher level code. In my world I write templates, and then I write styles. I'm not a huge fan of back and forth.</p>
+
+<h3>Balancing Developer Time to Web Performance</h3>
+
+<p>Let's start with: I care about CSS performance; but I'm making muscle cars, not Ferraris.</p>
+
+<p>I'm used to making larger scale sites, but not your Google or Facebook type 'large'. We don't have teams of people dedicated to performance, and CSS typically has a lower impact on page load/render time.</p>
+
+<p>If I were in that position, OOCSS and Atomic CSS would make more sense for my use.</p>
+
+<p><a href="http://www.stevesouders.com/blog/2009/03/10/performance-impact-of-css-selectors/">The difference between rendering page that has 4,000 CSS rules vs. 18,000 rules is ~300ms in IE7</a>. My entire site's CSS is usually ~4000 lines (not rules, lines).</p>
+
+<p>If I can make myself or my team more effective and aid collaboration, I usually find more gains there than the effort I'd spend making the site a few ms more performant.</p>
+
+<h3>Some assumptions I made in my code:</h3>
+
+<p>I assumed that the content area of an article would be out of my control. Text markup (p, ul, li, etc) would be there, added by a content user via a WYSIWYG editor. You may notice a series of p, ul and li tags with no classes. Everything else I assumed would be markup I could control pretty tightly.</p>
+
+<h2>Resulting thoughts on BEM</h2>
+
+<h3>Let's start with the cons:</h3>
+
+<ul>
+<li>It slows me down when writing markup. Mostly because I'm thinking more about my naming and the -/_ are harder to hit than a-z.</li>
+<li>The verbose class names make the HTML a little harder to read... that is if you really have to read it, which I generally don't spend much time doing.</li>
+<li>It goofs with my Editor of choice(Sublime Text), mostly when I'm writing the HTML. Tab completion and navigating the code with the keyboard isn't as easy.</li>
+<li>Most BEM implementations I've seen use dashes to seperate words, e.g. <br>
+multi-word-class__sub-element--modifier-name<br>
+That's kind of an exaggeration, but when you're looking at a sea of class names, it's important. What I'm liking better is camel case, so:<br>
+multiWordClass__subElement--modifierName
+</li>
+</ul>
+
+<p>To be frank, I don't think those cons are great reasons to judge a front-end framework. These are both acceptable beefs if I get some good benefits.</p>
+
+<h3>Which brings us to the pros:</h3>
+
+<ul>
+<li>
+<p><strong>My CSS has an very low specificity</strong>. As the codebase grows the specificity's growth will likely be slower (hopefully specificity can stay just as low). The most authoratative selectors I have consists of 2 classes!</p>
+<p>Maintainability ++<br>
+Scalability ++</p>
+</li>
+<li>
+<p><strong>BEM naming conventions are much more legible and explicit in their meaning</strong>. It also enforces a naming convention that I find easy to follow, and I think other people would write similar classes to mine, making this easier to hand off.</p>
+<p>Maintainability ++<br>
+Scalability++</p>
+</li>
+<li>
+<p><strong>Very preprocessor friendly</strong> (at least for SASS 3.3+ and Stylus)</p>
+<p>Maintainability ++</p>
+</li>
+<li>
+<p><strong>My SASS code is easier to read</strong>. I don't know if everyone would agree with this, but I'm nesting more with less specificity thanks to SASS 3.3's ability to concatenate selector names with the &amp;. This is super helpful when I have to pick through my code to find where I stuck a style.</p>
+<p>Maintainability ++<br>
+Scalability ++</p>
+</li>
+<li>
+<p><strong>This will map very neatly to a CMS' structure</strong>, which for me is a big deal. Fighting to get your classes where you want them in the 'view' or 'theme' layer is not a good way to spend your time.</p>
+Scalability ++
+</li>
+</ul>
+
+<h2>Conclusion</h2>
+
+<p>I'm a fan. I'm a big fan. This is a great way to write CSS for large scale sites that have to be kept up over long amounts of time.</p>
+
+<h2>My Inspiration for this little experiment:</h2>
+
+<ul>
+<li>
+  <a href="http://blog.frankmtaylor.com/">
+    Frank M. Taylor
+  </a>
+</li>
+<li>
+  <a href="http://nicolasgallagher.com/about-html-semantics-front-end-architecture/">
+    About HTML semantics and front-end architecture - Nicolas Gallagher
+  </a>
+</li>
+<li>
+  <a href="http://ash.gd/a-simple-bem-class-naming-convention/">
+    A Simpler BEM Class Naming Convention? - Ash.gd
+  </a>
+</li>
+</ul>
+
+
+        </section>
+
+        <hr class="end-of-article-sep">
+
+        <footer class="end-of-article-footer">
+
+          
+
+              <div class="post-meta-line post-meta-line-hearter">
+      <a href="http://codepen.io/wesruv/post/adventures-in-bem-responsive#0" id="loves_ZNqWGD" data-item="post" data-hashid="ZNqWGD" data-owned="false" class="button button-medium hearter big-hearter heart-button loves loved-0">
+        <svg class="icon-heart">
+          <use xlink:href="#heart"></use>
+        </svg>
+        <svg class="icon-heart icon-animator">
+          <use xlink:href="#heart"></use>
+        </svg>
+      </a>
+    </div>
+
+
+          <div id="post-stats" class="stats">
+            <span class="single-stat stat-views">
+  5124
+  <svg class="icon-eye">
+    <use xlink:href="#eye"></use>
+  </svg>
+</span>
+
+<span class="single-stat stat-comments">
+  9
+  <svg class="icon-comment">
+    <use xlink:href="#comment"></use>
+  </svg>
+</span>
+
+<span class="single-stat stat-loves">
+  <span class="count">
+    20
+  </span>
+  <svg class="icon-heart">
+    <use xlink:href="#heart"></use>
+  </svg>
+</span>
+          </div>
+
+        </footer>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="width-wrapper width-wrapper-comments">
+
+        <h2>Tags</h2>
+
+        <ul class="tag-grid">
+
+            <li><a href="http://codepen.io/posts/tag/css">css</a></li>
+            <li><a href="http://codepen.io/posts/tag/bem">bem</a></li>
+            <li><a href="http://codepen.io/posts/tag/responsive">responsive</a></li>
+            <li><a href="http://codepen.io/posts/tag/frontend%20architecture">frontend architecture</a></li>
+
+        </ul>
+
+      <section class="comments">
+
+  <h2>Comments</h2>
+
+  <ol id="comment-list" class="comment-list block-comments" itemprop="comment">
+
+
+          <li class="group comment  syntax-highlighting-done" id="comment-id-857">
+
+
+  <div class="block-comment-content module text">
+
+    <div class="comment-user">
+
+      <div class="comment-user-avatar-wrap">
+        <a href="http://codepen.io/jekrb">
+          <img src="./Adventures in BEM and Responsive with SASS by wesruv on CodePen_files/profile-80_3.jpg" class="comment-avatar" alt="">
+        </a>
+      </div>
+
+      <div class="comment-user-text">
+        <a href="http://codepen.io/jekrb" data-username="jekrb" class="comment-username">
+          Jake B‮ nedru
+            <span class="username">
+            (@jekrb)
+            </span>
+        </a>
+
+        <span class="on">on</span>
+
+        <a href="http://codepen.io/wesruv/post/adventures-in-bem-responsive#comment-id-857">
+          <time class="block-comment-time">
+            July 17, 2014
+          </time>
+        </a>
+      </div>
+
+    </div>
+
+    <div class="comment-text">
+      <p>This might be somewhat useful to alleviate the cons.  It would require a bit of a rewrite, but generally allows for the html to look more like: <code>&lt;div&gt;</code> rather than <code>&lt;div&gt;</code>.  <a href="http://codepen.io/JacobJWBurden/pen/hrcvL" title="example">Here is a simple example.</a></p>
+    </div>
+
+    <div class="block-comment-actions">
+
+
+
+      <a id="loves_qkwQVZ" data-item="post_comment" data-hashid="qkwQVZ" data-owned="false" class="comment-heart loves ">
+
+        <span data-hashid="qkwQVZ" class="count comment-number">
+          
+        </span>
+        <span class="screen-reader-text" data-comment-hashid="qkwQVZ">Love</span>
+        <svg class="icon-heart">
+          <use xlink:href="#heart"></use>
+        </svg>
+
+      </a>
+
+    </div>
+
+  </div>
+
+
+</li>
+
+          <li class="group comment  syntax-highlighting-done" id="comment-id-862">
+
+
+  <div class="block-comment-content module text">
+
+    <div class="comment-user">
+
+      <div class="comment-user-avatar-wrap">
+        <a href="http://codepen.io/wesruv">
+          <img src="./Adventures in BEM and Responsive with SASS by wesruv on CodePen_files/profile-80_2.jpg" class="comment-avatar" alt="">
+        </a>
+      </div>
+
+      <div class="comment-user-text">
+        <a href="http://codepen.io/wesruv" data-username="wesruv" class="comment-username">
+          wesruv
+            <span class="username">
+            (@wesruv)
+            </span>
+        </a>
+
+        <span class="on">on</span>
+
+        <a href="http://codepen.io/wesruv/post/adventures-in-bem-responsive#comment-id-862">
+          <time class="block-comment-time">
+            July 18, 2014
+          </time>
+        </a>
+      </div>
+
+    </div>
+
+    <div class="comment-text">
+      <p>Thanks for the comment! In my case I'm liking the lower specificity of having one/two classes in my selectors. I think it's worth the 'awkward class names'.</p>
+    </div>
+
+    <div class="block-comment-actions">
+
+
+
+      <a id="loves_okjMbz" data-item="post_comment" data-hashid="okjMbz" data-owned="false" class="comment-heart loves ">
+
+        <span data-hashid="okjMbz" class="count comment-number">
+          
+        </span>
+        <span class="screen-reader-text" data-comment-hashid="okjMbz">Love</span>
+        <svg class="icon-heart">
+          <use xlink:href="#heart"></use>
+        </svg>
+
+      </a>
+
+    </div>
+
+  </div>
+
+
+</li>
+
+          <li class="group comment  syntax-highlighting-done" id="comment-id-868">
+
+
+  <div class="block-comment-content module text">
+
+    <div class="comment-user">
+
+      <div class="comment-user-avatar-wrap">
+        <a href="http://codepen.io/jekrb">
+          <img src="./Adventures in BEM and Responsive with SASS by wesruv on CodePen_files/profile-80_3.jpg" class="comment-avatar" alt="">
+        </a>
+      </div>
+
+      <div class="comment-user-text">
+        <a href="http://codepen.io/jekrb" data-username="jekrb" class="comment-username">
+          Jake B‮ nedru
+            <span class="username">
+            (@jekrb)
+            </span>
+        </a>
+
+        <span class="on">on</span>
+
+        <a href="http://codepen.io/wesruv/post/adventures-in-bem-responsive#comment-id-868">
+          <time class="block-comment-time">
+            July 18, 2014
+          </time>
+        </a>
+      </div>
+
+    </div>
+
+    <div class="comment-text">
+      <p>You're welcome! It was an excellent blog post btw.  I may be (probably am) wrong in assuming this, but isn't the specificity equal in either case?   <a href="http://codepen.io/JacobJWBurden/pen/Cvqzl" title="example with &quot;b -e -m&quot; and &quot;b -e b_e-m&quot;">example with "b _e -m" and "b b_e b_e-m</a></p>
+    </div>
+
+    <div class="block-comment-actions">
+
+
+
+      <a id="loves_qkDmAn" data-item="post_comment" data-hashid="qkDmAn" data-owned="false" class="comment-heart loves ">
+
+        <span data-hashid="qkDmAn" class="count comment-number">
+          
+        </span>
+        <span class="screen-reader-text" data-comment-hashid="qkDmAn">Love</span>
+        <svg class="icon-heart">
+          <use xlink:href="#heart"></use>
+        </svg>
+
+      </a>
+
+    </div>
+
+  </div>
+
+
+</li>
+
+          <li class="group comment  syntax-highlighting-done" id="comment-id-874">
+
+
+  <div class="block-comment-content module text">
+
+    <div class="comment-user">
+
+      <div class="comment-user-avatar-wrap">
+        <a href="http://codepen.io/Ash">
+          <img src="./Adventures in BEM and Responsive with SASS by wesruv on CodePen_files/baa7a8ec68ea6c13a1f0691098872575" class="comment-avatar" alt="">
+        </a>
+      </div>
+
+      <div class="comment-user-text">
+        <a href="http://codepen.io/Ash" data-username="Ash" class="comment-username">
+          Ash
+            <span class="username">
+            (@Ash)
+            </span>
+        </a>
+
+        <span class="on">on</span>
+
+        <a href="http://codepen.io/wesruv/post/adventures-in-bem-responsive#comment-id-874">
+          <time class="block-comment-time">
+            July 18, 2014
+          </time>
+        </a>
+      </div>
+
+    </div>
+
+    <div class="comment-text">
+      <p>Interesting article, thanks for the reference (:</p><p>I've been exploring some of these techniques in projects recently, and have a couple of observations.</p><h2>Came cased class names weird me out</h2><p>I used camel cased class names for a couple of recent sites. I like to camel case names in code, so following this in CSS seems nice. It ended up weirding me out though, because it conflicts with CSS' typical style of hyphenating things.</p><h2>Preprocessor class name concatenation quickly becomes messy</h2><p>When I discovered class name concatenation with <code>&amp;</code>, I started using it for everything. This ended up creating messy looking, tricky to follow, and deeply nested CSS rulesets.</p><p>I've now decided to reserve the <code>&amp;</code> functionality for modifiers. Although I'm not 100% set on this approach, it keeps things tidy for now.</p><div class="box"><pre class="has-code"><code>.post  background yellow  &amp;--featured    background blue.post__date  font-style italic</code></pre></div><p>ps. I recently made and released the class name expansion tool I mentioned in my post. Would be interesting to know if it's any use to you: <a href="https://github.com/juice49/ExpandOBem">https://github.com/juice49/ExpandOBem</a>.</p>
+    </div>
+
+    <div class="block-comment-actions">
+
+
+
+      <a id="loves_wZxmPz" data-item="post_comment" data-hashid="wZxmPz" data-owned="false" class="comment-heart loves ">
+
+        <span data-hashid="wZxmPz" class="count comment-number">
+          1
+        </span>
+        <span class="screen-reader-text" data-comment-hashid="wZxmPz">Love</span>
+        <svg class="icon-heart">
+          <use xlink:href="#heart"></use>
+        </svg>
+
+      </a>
+
+    </div>
+
+  </div>
+
+
+</li>
+
+          <li class="group comment  syntax-highlighting-done" id="comment-id-876">
+
+
+  <div class="block-comment-content module text">
+
+    <div class="comment-user">
+
+      <div class="comment-user-avatar-wrap">
+        <a href="http://codepen.io/wesruv">
+          <img src="./Adventures in BEM and Responsive with SASS by wesruv on CodePen_files/profile-80_2.jpg" class="comment-avatar" alt="">
+        </a>
+      </div>
+
+      <div class="comment-user-text">
+        <a href="http://codepen.io/wesruv" data-username="wesruv" class="comment-username">
+          wesruv
+            <span class="username">
+            (@wesruv)
+            </span>
+        </a>
+
+        <span class="on">on</span>
+
+        <a href="http://codepen.io/wesruv/post/adventures-in-bem-responsive#comment-id-876">
+          <time class="block-comment-time">
+            July 19, 2014
+          </time>
+        </a>
+      </div>
+
+    </div>
+
+    <div class="comment-text">
+      <p><a href="http://codepen.io/JacobJWBurden" target="_blank">@JacobJWBurden</a>:Ahh, maybe I didn't explain some of it so well. So in my markup my classes look like this:</p><div class="box"><pre class="has-code"><code>section.page__region.page__region--primary  aside.page__region.page__region--secondary</code></pre></div><p>So these have styles because they are '<code>page__region</code>' and they also have styles based on what kind of region they are ("<code>--primary</code>" and "<code>--secondary</code>")</p><p>My final styles end up looking like this:</p><div class="box"><pre class="has-code"><code>.page__region { /* styles */ }  .page__region--primary { /* styles */ }  .page__region--secondary { /* styles */ }</code></pre></div><p>So the specificity is quite low, because it's only one class.</p><p>To make this easier in my Sass I'm using the '&amp;' concatenating that got added in Sass 3.3:</p><div class="box"><pre class="has-code"><code>.page {    // .page styles    &amp;__region {      // .page__region styles      &amp;--primary {        // .page__region--primary styles      &amp;--secondary {        // .page__region--secondary styles</code></pre></div><p>Which as Ash has commented, got a bit pesky to them. I'm still loving it, but we shall see how it plays out in the long run :)</p><p>@Ash:No problem! Thanks for your original post, and this excellent reply! I will keep an eye on that, so far I'm liking it, but I could see how it might get hard to read once I apply this in a large site/app.</p>
+    </div>
+
+    <div class="block-comment-actions">
+
+
+
+      <a id="loves_MnqLxk" data-item="post_comment" data-hashid="MnqLxk" data-owned="false" class="comment-heart loves ">
+
+        <span data-hashid="MnqLxk" class="count comment-number">
+          
+        </span>
+        <span class="screen-reader-text" data-comment-hashid="MnqLxk">Love</span>
+        <svg class="icon-heart">
+          <use xlink:href="#heart"></use>
+        </svg>
+
+      </a>
+
+    </div>
+
+  </div>
+
+
+</li>
+
+          <li class="group comment  syntax-highlighting-done" id="comment-id-881">
+
+
+  <div class="block-comment-content module text">
+
+    <div class="comment-user">
+
+      <div class="comment-user-avatar-wrap">
+        <a href="http://codepen.io/Ash">
+          <img src="./Adventures in BEM and Responsive with SASS by wesruv on CodePen_files/baa7a8ec68ea6c13a1f0691098872575" class="comment-avatar" alt="">
+        </a>
+      </div>
+
+      <div class="comment-user-text">
+        <a href="http://codepen.io/Ash" data-username="Ash" class="comment-username">
+          Ash
+            <span class="username">
+            (@Ash)
+            </span>
+        </a>
+
+        <span class="on">on</span>
+
+        <a href="http://codepen.io/wesruv/post/adventures-in-bem-responsive#comment-id-881">
+          <time class="block-comment-time">
+            July 21, 2014
+          </time>
+        </a>
+      </div>
+
+    </div>
+
+    <div class="comment-text">
+      <p>@wesruv <code>&amp;__</code> is certainly super-handy and elegant at times. I just need to find a rule I can follow to consistently use it, whilst keeping things straightforward.</p><p>ExpandOBem is still an experiment, and you're right, it is potentially a pain (especially with larger projects). It's nice to use from an HTML authoring point of view, though, and a better solution than selector attribute hacking in my opinion. No idea what will become of it (:</p>
+    </div>
+
+    <div class="block-comment-actions">
+
+
+
+      <a id="loves_jZYdOn" data-item="post_comment" data-hashid="jZYdOn" data-owned="false" class="comment-heart loves ">
+
+        <span data-hashid="jZYdOn" class="count comment-number">
+          
+        </span>
+        <span class="screen-reader-text" data-comment-hashid="jZYdOn">Love</span>
+        <svg class="icon-heart">
+          <use xlink:href="#heart"></use>
+        </svg>
+
+      </a>
+
+    </div>
+
+  </div>
+
+
+</li>
+
+          <li class="group comment  syntax-highlighting-done" id="comment-id-935">
+
+
+  <div class="block-comment-content module text">
+
+    <div class="comment-user">
+
+      <div class="comment-user-avatar-wrap">
+        <a href="http://codepen.io/lozandier">
+          <img src="./Adventures in BEM and Responsive with SASS by wesruv on CodePen_files/405efe275ceff3492be8b0985531fa19" class="comment-avatar" alt="">
+        </a>
+      </div>
+
+      <div class="comment-user-text">
+        <a href="http://codepen.io/lozandier" data-username="lozandier" class="comment-username">
+          lozandier
+            <span class="username">
+            (@lozandier)
+            </span>
+        </a>
+
+        <span class="on">on</span>
+
+        <a href="http://codepen.io/wesruv/post/adventures-in-bem-responsive#comment-id-935">
+          <time class="block-comment-time">
+            July 30, 2014
+          </time>
+        </a>
+      </div>
+
+    </div>
+
+    <div class="comment-text">
+      <p><a href="http://codepen.io/wesruv" target="_blank">@wesruv</a> Did you consider OOSASS, leveraging placeholder selectors to avoid the large amounts of .classes you'd need with a OOCSS-oriented framework of thinking about styling your web page such as BEM? </p><p>The use of placeholder selectors this way is sort of creating an invisible class system. </p><p>The advantages are you can have such things like the "components" you've outlined above to be easily expandable to future elements with far less fuss potentially through the use of extend. </p><div class="box"><pre class="lang-text/x-sass has-code"><code class="sass cm-s-default" data-lang="text/x-sass"><span class="cm-operator">%</span><span class="cm-atom">red</span>   <span class="cm-meta">@at-root</span> <span class="cm-operator">#{</span><span class="cm-atom">selector-extend</span><span class="cm-operator">(</span>&amp;, <span class="cm-string">"</span><span class="cm-string">%</span><span class="cm-string">r</span><span class="cm-string">e</span><span class="cm-string">d"</span>, <span class="cm-string">"</span><span class="cm-string">:</span><span class="cm-string">h</span><span class="cm-string">o</span><span class="cm-string">s</span><span class="cm-string">t</span><span class="cm-string">(</span><span class="cm-string">.</span><span class="cm-string">s</span><span class="cm-string">o</span><span class="cm-string">m</span><span class="cm-string">e</span><span class="cm-string">I</span><span class="cm-string">n</span><span class="cm-string">i</span><span class="cm-string">t</span><span class="cm-string">i</span><span class="cm-string">a</span><span class="cm-string">l</span><span class="cm-string">C</span><span class="cm-string">l</span><span class="cm-string">a</span><span class="cm-string">s</span><span class="cm-string">s</span><span class="cm-string">)</span><span class="cm-string">,</span><span class="cm-string"> </span><span class="cm-string">.</span><span class="cm-string">a</span><span class="cm-string">n</span><span class="cm-string">o</span><span class="cm-string">t</span><span class="cm-string">h</span><span class="cm-string">e</span><span class="cm-string">r</span><span class="cm-string">C</span><span class="cm-string">l</span><span class="cm-string">a</span><span class="cm-string">s</span><span class="cm-string">s</span><span class="cm-string">,</span><span class="cm-string"> </span><span class="cm-string">.</span><span class="cm-string">a</span><span class="cm-string">n</span><span class="cm-string">d</span><span class="cm-string">A</span><span class="cm-string">n</span><span class="cm-string">o</span><span class="cm-string">t</span><span class="cm-string">h</span><span class="cm-string">e</span><span class="cm-string">r</span><span class="cm-string">C</span><span class="cm-string">l</span><span class="cm-string">a</span><span class="cm-string">s</span><span class="cm-string">s"</span><span class="cm-operator">)</span><span class="cm-operator">}</span>  <span class="cm-property">color</span><span class="cm-operator">:</span> <span class="cm-attribute">red</span></code></pre></div><p>Such a technique perhaps will give you a  faster heads up on whether or not your "class" names are too specific or too board if you find yourself creating long extend chains such as the code snippet above. </p><p>The obvious cons is that you may very well use Sass to the extent you're too dependent on it for future iterations of your CSS codebase and something a new team member may find to be something only the 4 Horsemen or Horsewomen of Sass could've made...</p>
+    </div>
+
+    <div class="block-comment-actions">
+
+
+
+      <a id="loves_qzDWQZ" data-item="post_comment" data-hashid="qzDWQZ" data-owned="false" class="comment-heart loves ">
+
+        <span data-hashid="qzDWQZ" class="count comment-number">
+          1
+        </span>
+        <span class="screen-reader-text" data-comment-hashid="qzDWQZ">Love</span>
+        <svg class="icon-heart">
+          <use xlink:href="#heart"></use>
+        </svg>
+
+      </a>
+
+    </div>
+
+  </div>
+
+
+</li>
+
+          <li class="group comment  syntax-highlighting-done" id="comment-id-936">
+
+
+  <div class="block-comment-content module text">
+
+    <div class="comment-user">
+
+      <div class="comment-user-avatar-wrap">
+        <a href="http://codepen.io/dominicwhittle">
+          <img src="./Adventures in BEM and Responsive with SASS by wesruv on CodePen_files/00000000000000000000000000000000" class="comment-avatar" alt="">
+        </a>
+      </div>
+
+      <div class="comment-user-text">
+        <a href="http://codepen.io/dominicwhittle" data-username="dominicwhittle" class="comment-username">
+          Dominic
+            <span class="username">
+            (@dominicwhittle)
+            </span>
+        </a>
+
+        <span class="on">on</span>
+
+        <a href="http://codepen.io/wesruv/post/adventures-in-bem-responsive#comment-id-936">
+          <time class="block-comment-time">
+            July 30, 2014
+          </time>
+        </a>
+      </div>
+
+    </div>
+
+    <div class="comment-text">
+      <p>It takes a while to get a feel for BEM.</p><p>I would look at splitting your Blocks up more. </p><p>.header can be is own Block, as can .siteNav </p><p>If you <em>really</em> want to style the nav as an Element of page, then you should also avoid implying markup structure — you have .page_<em>header</em><em>siteNav when .page</em>_siteNav is sufficient.</p><p>I like to think of Blocks as components that can sit inside each other. And try and encapsulate your blocks: instead of needing a class that styles .siteNav inside .page__header, use a Modifier on .siteNav to give it those styles — .siteNav.siteNav--primary — then you can use it anywhere.</p>
+    </div>
+
+    <div class="block-comment-actions">
+
+
+
+      <a id="loves_aneMWn" data-item="post_comment" data-hashid="aneMWn" data-owned="false" class="comment-heart loves ">
+
+        <span data-hashid="aneMWn" class="count comment-number">
+          1
+        </span>
+        <span class="screen-reader-text" data-comment-hashid="aneMWn">Love</span>
+        <svg class="icon-heart">
+          <use xlink:href="#heart"></use>
+        </svg>
+
+      </a>
+
+    </div>
+
+  </div>
+
+
+</li>
+
+          <li class="group comment  syntax-highlighting-done" id="comment-id-955">
+
+
+  <div class="block-comment-content module text">
+
+    <div class="comment-user">
+
+      <div class="comment-user-avatar-wrap">
+        <a href="http://codepen.io/wesruv">
+          <img src="./Adventures in BEM and Responsive with SASS by wesruv on CodePen_files/profile-80_2.jpg" class="comment-avatar" alt="">
+        </a>
+      </div>
+
+      <div class="comment-user-text">
+        <a href="http://codepen.io/wesruv" data-username="wesruv" class="comment-username">
+          wesruv
+            <span class="username">
+            (@wesruv)
+            </span>
+        </a>
+
+        <span class="on">on</span>
+
+        <a href="http://codepen.io/wesruv/post/adventures-in-bem-responsive#comment-id-955">
+          <time class="block-comment-time">
+            July 31, 2014
+          </time>
+        </a>
+      </div>
+
+    </div>
+
+    <div class="comment-text">
+      <p><a href="http://codepen.io/lozandier" target="_blank">@lozandier</a>, thanks for the thought and the caveat! Both very thought provoking. I've been trying to wrap my head around good uses of placeholders that don't get me into maintainability issues. They seem like a potential double edged sword.</p><p><a href="http://codepen.io/Dominic" target="_blank">@Dominic</a> thanks for the tips! Still trying to get the hang of what contexts I want :)</p>
+    </div>
+
+    <div class="block-comment-actions">
+
+
+
+      <a id="loves_mZOqDk" data-item="post_comment" data-hashid="mZOqDk" data-owned="false" class="comment-heart loves ">
+
+        <span data-hashid="mZOqDk" class="count comment-number">
+          
+        </span>
+        <span class="screen-reader-text" data-comment-hashid="mZOqDk">Love</span>
+        <svg class="icon-heart">
+          <use xlink:href="#heart"></use>
+        </svg>
+
+      </a>
+
+    </div>
+
+  </div>
+
+
+</li>
+
+
+
+  </ol>
+
+  <h4 id="leave-comment" class="leave-comment">
+    <span class="leave-comment-title">Leave a Comment</span>
+    <span class="title-hints">
+      <a href="http://daringfireball.net/projects/markdown/syntax" target="_blank">Markdown</a> supported.
+      <span class="hide-on-mobile">Double-click names to add to comment.</span>
+    </span>
+  </h4>
+
+  <form id="comment-form" class="block-comment-form" action="http://codepen.io/wesruv/post/adventures-in-bem-responsive#0">
+
+
+    <div class="module message-empty">
+      You must be <a href="http://codepen.io/login/">logged in</a> to comment.
+    </div>
+
+
+</form>
+
+
+</section>
+
+
+
+  </div>
+
+</article>
+
+</main>
+
+<footer class="link-footer" id="link-footer">
+
+  <div class="width-wrapper" id="link-footer-width-wrapper">
+
+    <nav class="link-footer-links link-footer-codepen-links" id="link-footer-codepen-links">
+      <strong>CodePen</strong>
+      <a href="http://blog.codepen.io/">Blog</a>
+      <a href="http://blog.codepen.io/store/">Store</a>
+      <a href="http://blog.codepen.io/radio/">Podcast</a>
+      <a href="http://codepen.io/stats/">Stats</a>
+      <a href="http://codepen.io/about/">About</a>
+      <a href="http://codepen.io/support/">Support</a>
+    </nav>
+
+    <nav class="link-footer-links link-footer-community-links" id="link-footer-community-links">
+      <strong>Community</strong>
+      <a href="http://codepen.io/jobs/">Jobs</a>
+      <a href="http://blog.codepen.io/meetups/">Meetups</a>
+      <a href="https://twitter.com/CodePen">Twitter</a>
+      <a href="https://www.flickr.com/photos/codepen/">Flickr</a>
+      <a href="https://blog.codepen.io/legal/code-conduct/">Code of Conduct</a>
+    </nav>
+
+    <nav class="link-footer-links link-footer-profile-links" id="link-footer-profile-links">
+      <strong>wesruv</strong>
+      <a href="http://codepen.io/wesruv/public/feed/">Public Pens RSS</a>
+      <a href="http://codepen.io/wesruv/popular/feed/">Popular Pens RSS</a>
+      <a href="http://codepen.io/wesruv/posts/feed/">Posts RSS</a>
+    </nav>
+
+    <div class="copyright" id="link-footer-copyright">
+      <h1 class="logo header-chunk">
+
+  <a href="http://codepen.io/" class="small-screen-logo">
+    <svg class="icon-codepen-box">
+      <use xlink:href="#codepen-box"></use>
+    </svg>
+  </a>
+
+  <a href="http://codepen.io/" class="large-screen-logo">
+    CodePen
+  </a>
+
+</h1>
+      <p>©2015 CodePen</p>
+      <p class="slogan"><em>Demo or it didn't happen.</em></p>
+    </div>
+
+  </div>
+
+</footer>
+
+
+
+
+  <div id="popup-overlay" class="overlay popup-overlay"></div>
+  <div id="modal-overlay" class="overlay modal-overlay"></div>
+
+  <input type="hidden" id="init-data" value="{&quot;__mobile&quot;:false,&quot;__cookieUsed&quot;:false,&quot;__turnOffJS&quot;:false,&quot;__CPDATA&quot;:{&quot;host&quot;:&quot;codepen.io&quot;,&quot;asset_host&quot;:&quot;assets.codepen.io&quot;,&quot;asset_subdomain&quot;:&quot;assets.&quot;,&quot;host_port&quot;:&quot;&quot;,&quot;host_secure_subdomain&quot;:&quot;s.&quot;,&quot;iframe_sandbox&quot;:&quot;allow-scripts allow-pointer-lock allow-same-origin allow-popups allow-modals allow-forms&quot;},&quot;__env&quot;:&quot;prod&quot;,&quot;__user&quot;:&quot;{\&quot;id\&quot;:1,\&quot;username\&quot;:\&quot;anon\&quot;,\&quot;current_team_id\&quot;:0,\&quot;paid\&quot;:false}&quot;,&quot;__post&quot;:{&quot;hashid&quot;:&quot;ZNqWGD&quot;,&quot;title&quot;:&quot;Adventures in BEM and Responsive with SASS&quot;,&quot;permalink&quot;:&quot;adventures-in-bem-responsive&quot;,&quot;published_at&quot;:&quot;2014-07-16T02:42:06Z&quot;,&quot;last_updated&quot;:1405515730.0},&quot;__profiled&quot;:{&quot;id&quot;:43724,&quot;name&quot;:&quot;wesruv&quot;,&quot;username&quot;:&quot;wesruv&quot;,&quot;type&quot;:&quot;user&quot;,&quot;is_team&quot;:false,&quot;base_url&quot;:&quot;/wesruv&quot;}}">
+
+  <script src="./Adventures in BEM and Responsive with SASS by wesruv on CodePen_files/everypage-6891eac85b7f341be4639780b6eb564a.js" type="text/javascript"></script>
+
+
+  
+
+    <script src="./Adventures in BEM and Responsive with SASS by wesruv on CodePen_files/index-4e11f646bc8419a94a65605e1b9ef0bf.js" type="text/javascript"></script>
+
+
+
+
+
+
+
+
+</body></html>
