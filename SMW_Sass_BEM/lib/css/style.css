@@ -204,11 +204,14 @@ a:hover {
   text-align: center; }
 .content .content__title {
   font-size: 2rem;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
   opacity: 0.9; }
 .content .content__description {
   opacity: 0.8;
-  margin-bottom: 100px; }
+  margin-bottom: 100px;
+  word-wrap: break-word;
+  width: 44em;
+  margin-left: 180px; }
 .content .content__button {
   background: rgba(0, 0, 0, 0.26);
   color: #ffffff;
