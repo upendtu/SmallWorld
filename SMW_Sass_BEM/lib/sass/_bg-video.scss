@@ -1,5 +1,5 @@
 .fullscreen-bg{
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
@@ -18,6 +18,13 @@
   z-index: -100;
 }
 
+.fullscreen-bg__wrapper{
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
 @media (min-aspect-ratio:16/9) {
   .fullscreen-bg__video{
     height: 300%;
@@ -31,3 +38,5 @@
   }
 
   }
+
+  /*=================================Background Video Css Close here========================*/

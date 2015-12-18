@@ -1,18 +1,20 @@
-footer {
+.footer {
   width: 100%;
-  min-width: #{$frameWidth}px;
+  min-width:960px;
   position: absolute;
   bottom: 0px;
+  padding: 10px;
   text-align: center;
-  background-color:#fff;
-  img {
-    height: 40px;
+
+  .footer__logo{
+    height: 15px;
+    margin-bottom: 10px;
+  }
+  .footer__text{
+    font-size: 0.6rem;
+    color: #fff;
   }
 
-  p {
-    font-size: 0.7rem;
-    margin-bottom: 10px;
- }
 }
 
 /*=====================Footer Css Close here ===============*/

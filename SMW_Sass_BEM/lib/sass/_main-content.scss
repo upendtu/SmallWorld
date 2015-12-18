@@ -1,0 +1,54 @@
+.content{
+  position: absolute;
+  top: 15%;
+  width: 980px;
+  margin: 0 auto;
+  color: #fff;
+  text-align: center;
+
+  .content__title{
+    font-size: 2rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+  }
+
+  .content__description{
+    opacity: 0.8;
+    margin-bottom: 100px;
+  }
+
+  .content__button{
+    background: rgba(0, 0, 0, 0.26);;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 65px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 20px;
+    display: block;
+    border-radius: 6px;
+    display: inline-block;
+    padding: 2px 40px 2px 40px;
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s;
+
+  }
+
+  .content__button:hover{
+    background-color: black;
+    border-color: #fff;
+    color: white;
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s;
+  }
+}
+
+/*====================main content css end here =========================*/
